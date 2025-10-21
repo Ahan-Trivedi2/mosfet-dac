@@ -1,0 +1,86 @@
+v {xschem version=3.4.8RC file_version=1.3}
+G {}
+K {}
+V {}
+S {}
+F {}
+E {}
+B 2 -630 70 170 470 {flags=graph
+y1=-1.6674368e-08
+y2=1.656565e-07
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=1.8
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node=i(vmeas)
+color=4
+dataset=-1
+unitx=1
+logx=0
+logy=0
+rawfile=$netlist_dir/bbg.raw}
+N -180 -60 -180 -50 {lab=#net1}
+N -60 -120 -40 -120 {lab=#net2}
+N -40 -120 -40 -110 {lab=#net2}
+N -40 -110 -30 -110 {lab=#net2}
+N -60 -180 -40 -180 {lab=#net3}
+N -40 -200 -40 -180 {lab=#net3}
+N -40 -200 -30 -200 {lab=#net3}
+N -0 -170 -0 -160 {lab=#net4}
+N -0 -150 -0 -140 {lab=#net5}
+C {madvlsi/resistor.sym} -180 -20 0 0 {name=R1
+value=200k
+m=1}
+C {madvlsi/gnd.sym} -180 10 0 0 {name=l2 lab=GND}
+C {madvlsi/vsource.sym} -400 -240 0 0 {name=V1
+value=1.8}
+C {madvlsi/vdd.sym} -400 -270 0 0 {name=l3 lab=VDD}
+C {madvlsi/gnd.sym} -400 -210 0 0 {name=l4 lab=GND}
+C {code_shown.sym} -320 -390 0 0 {name=SPICE only_toplevel=false value="
+.param bbg_wid=1 bbg_len=0.5 a=2
+.dc V1 0 1.8 0.05
+.save all"}
+C {sky130_fd_pr/corner.sym} -480 -120 0 0 {name=CORNER only_toplevel=false corner=tt}
+C {madvlsi/gnd.sym} -120 -60 0 0 {name=l1 lab=GND}
+C {madvlsi/vdd.sym} -150 -220 0 0 {name=l5 lab=VDD}
+C {madvlsi/nmos3.sym} 0 -110 0 0 {name=M1
+L=\{bbg_len\}
+W=\{bbg_wid\}
+body=GND
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {madvlsi/pmos3.sym} 0 -200 0 0 {name=M2
+L=\{bbg_len\}
+W=\{bbg_wid\}
+body=VDD
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {madvlsi/vdd.sym} 0 -230 0 0 {name=l6 lab=VDD}
+C {madvlsi/gnd.sym} 0 -80 0 0 {name=l7 lab=GND}
+C {madvlsi/ammeter1.sym} 0 -160 0 0 {name=Vmeas}
+C {bbg.sym} -200 -80 0 0 {}
