@@ -14,7 +14,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5
+x2=1.8
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -31,15 +31,15 @@ node="vdssat
 vc
 vcas"}
 B 2 -120 490 680 890 {flags=graph
-y1=-1.132645e-07
-y2=2.5553196e-06
+y1=3.1798639e-09
+y2=2.5313567e-08
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
 x1=0
-x2=5
+x2=1.8
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -97,8 +97,10 @@ N 780 -50 780 -30 {lab=Vcas}
 N 720 0 750 0 {lab=#net1}
 N 720 -80 750 -80 {lab=Vc}
 N 780 -130 780 -110 {lab=#net2}
-N 780 -160 780 -140 {lab=VP}
+N 780 -160 780 -140 {lab=#net3}
 N 720 60 720 70 {lab=GND}
+N 780 -220 780 -160 {lab=#net3}
+N 700 -220 780 -220 {lab=#net3}
 C {madvlsi/nmos4.sym} 0 -10 0 0 {name=M1
 L=\{len\}
 W=\{wid\}
@@ -180,8 +182,8 @@ C {lab_pin.sym} 190 -50 2 0 {name=p8 sig_type=std_logic lab=Vdssat
 C {lab_pin.sym} 260 -100 2 0 {name=p9 sig_type=std_logic lab=Vc
 }
 C {code_shown.sym} 350 -80 0 0 {name=SPICE only_toplevel=false value="
-.param wid=1 len=0.3 n=10 m=10
-.dc Vdd 0 5 0.05
+.param wid=3 len=3 n=10 m=10
+.dc Vout 0 1.8 0.02
 .save all
 "}
 C {madvlsi/vsource.sym} 530 -190 0 0 {name=Vdd
@@ -226,12 +228,13 @@ spiceprefix=X
 }
 C {madvlsi/gnd.sym} 880 30 0 0 {name=l3 lab=GND}
 C {madvlsi/vsource.sym} 720 30 0 0 {name=V1
-value=0.8}
+value=0.6}
 C {madvlsi/gnd.sym} 720 70 0 0 {name=l4 lab=GND}
 C {lab_pin.sym} 720 -80 0 0 {name=p3 sig_type=std_logic lab=Vc
 }
 C {madvlsi/ammeter1.sym} 780 -140 0 0 {name=Viout}
-C {lab_pin.sym} 780 -160 0 0 {name=p5 sig_type=std_logic lab=VP
-}
 C {lab_pin.sym} 780 -40 0 0 {name=p6 sig_type=std_logic lab=Vcas
 }
+C {madvlsi/vsource.sym} 700 -190 0 0 {name=Vout
+value=1.8}
+C {madvlsi/gnd.sym} 700 -160 0 0 {name=l5 lab=GND}

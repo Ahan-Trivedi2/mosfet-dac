@@ -5,6 +5,27 @@ V {}
 S {}
 F {}
 E {}
+B 2 -610 210 190 610 {flags=graph
+y1=-2.7062216e-06
+y2=5.7282754e-06
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=1.8
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node=i(vmeas)
+color=4
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
 N -160 80 -160 90 {lab=#net1}
 N -130 50 -50 50 {lab=#net2}
 N -110 10 -110 50 {lab=#net2}
@@ -202,7 +223,7 @@ C {madvlsi/vdd.sym} -160 -160 0 0 {name=l6 lab=VDD}
 C {madvlsi/vdd.sym} -20 -160 0 0 {name=l7 lab=VDD}
 C {madvlsi/vdd.sym} 100 -160 0 0 {name=l8 lab=VDD}
 C {madvlsi/vdd.sym} 210 -160 0 0 {name=l9 lab=VDD}
-C {code_shown.sym} -360 -200 0 0 {name=SPICE only_toplevel=false value=".dc V2 1.4 3 0.1
+C {code_shown.sym} -360 -200 0 0 {name=SPICE only_toplevel=false value=".dc V1 0 1.8 0.05
 .save all"}
 C {madvlsi/gnd.sym} 210 80 0 0 {name=l10 lab=GND}
 C {madvlsi/ff_models.sym} -430 0 0 0 {
