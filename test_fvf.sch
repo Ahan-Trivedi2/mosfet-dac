@@ -13,11 +13,11 @@ N 60 -40 60 130 {lab=#net1}
 N -110 80 -40 80 {lab=Vtest}
 N -40 160 -40 200 {lab=GND}
 N -170 80 -170 90 {lab=GND}
-N -240 30 -170 30 {lab=#net2}
-N -200 -180 -40 -180 {lab=#net3}
-N -200 -180 -200 -170 {lab=#net3}
-N -170 30 -70 30 {lab=#net2}
+N -200 -180 -40 -180 {lab=#net2}
+N -200 -180 -200 -170 {lab=#net2}
 N -40 -120 -40 -60 {lab=#net1}
+N -120 30 -70 30 {lab=#net3}
+N -230 30 -120 30 {lab=#net3}
 C {madvlsi/nmos3.sym} -40 30 0 0 {name=M2
 L=0.15
 W=1
@@ -48,22 +48,18 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {madvlsi/vsource.sym} -240 60 0 0 {name=V1
-value=1}
 C {madvlsi/vsource.sym} -200 -140 0 0 {name=V2
 value=1.8}
-C {madvlsi/gnd.sym} -240 90 0 0 {name=l1 lab=GND}
 C {madvlsi/gnd.sym} -200 -110 0 0 {name=l2 lab=GND}
 C {isource.sym} -140 80 3 0 {name=I0 value=10u}
 C {madvlsi/gnd.sym} -170 90 0 0 {name=l3 lab=GND}
 C {madvlsi/gnd.sym} -40 200 0 0 {name=l4 lab=GND}
-C {isource.sym} -40 -150 0 0 {name=I1 value=1u}
+C {isource.sym} -40 -150 0 0 {name=I1 value=100n}
 C {lab_pin.sym} -40 80 2 0 {name=p1 sig_type=std_logic lab=Vtest}
-C {code_shown.sym} -350 -190 0 0 {name=SPICE only_toplevel=false value=".dc I0 0.1u 100u 0.1u 
+C {code_shown.sym} -350 -190 0 0 {name=SPICE only_toplevel=false value=".dc I0 0.1n 200n 0.1n 
 .save all"
 }
-C {madvlsi/tt_models.sym} -490 -180 0 0 {
-name=TT_MODELS
-only_toplevel=false
-value=".lib $::SKYWATER_MODELS/sky130.lib.spice tt"
-}
+C {sky130_fd_pr/corner.sym} -480 -110 0 0 {name=CORNER only_toplevel=false corner=tt}
+C {madvlsi/vsource.sym} -230 60 0 0 {name=V1
+value=0.8}
+C {madvlsi/gnd.sym} -230 90 0 0 {name=l1 lab=GND}
