@@ -21,9 +21,9 @@ N 80 -140 130 -140 {lab=Vc}
 N 80 -110 130 -110 {lab=Vin}
 N 80 -80 130 -80 {lab=VN}
 N 80 -50 130 -50 {lab=Vdsg}
-C {madvlsi/nmos3.sym} -120 -150 0 0 {name=M1
-L=\{dac_len\}
-W=\{dac_wid\}
+C {madvlsi/nmos3.sym} -120 -30 0 0 {name=M3
+L=\{fvf_len\}
+W=\{fvf_wid\}
 body=VN
 nf=1
 mult=1
@@ -36,24 +36,9 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {madvlsi/nmos3.sym} -120 -30 0 0 {name=M3
-L=\{dac_len\}
-W=\{dac_wid\}
-body=GND
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
 C {madvlsi/nmos3.sym} -120 90 2 0 {name=M4
-L=\{dac_len\}
-W=\{dac_wid\}
+L=\{fvf_len\}
+W=\{fvf_wid\}
 body=VN
 nf=1
 mult=1
@@ -84,6 +69,21 @@ C {iopin.sym} 130 -80 0 0 {name=p17 lab=VN}
 C {lab_pin.sym} -120 140 3 0 {name=p2 sig_type=std_logic lab=VN}
 C {opin.sym} 130 -50 0 0 {name=p18 lab=Vdsg}
 C {lab_pin.sym} 140 90 2 0 {name=p6 sig_type=std_logic lab=Vdsg}
-C {code_shown.sym} 260 -70 0 0 {name=SPICE only_toplevel=false value="
-.param dac_wid=1 dac_len=0.15
+C {code_shown.sym} 40 10 0 0 {name=SPICE only_toplevel=false value="
+.param fvf_wid=1 fvf_len=0.15
 "}
+C {madvlsi/pmos3.sym} -120 -150 0 0 {name=M1
+L=\{fvf_len\}
+W=\{fvf_wid\}
+body=VP
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
