@@ -11,17 +11,17 @@ N 170 180 170 210 {lab=VN}
 N 170 100 170 120 {lab=#net2}
 N 140 100 170 100 {lab=#net2}
 N 220 -60 220 100 {lab=#net2}
-N 250 -90 280 -90 {lab=#net3}
-N 310 -60 310 -30 {lab=#net4}
-N 100 20 100 40 {lab=#net5}
-N 100 -30 100 20 {lab=#net5}
+N 250 -90 280 -90 {lab=#net2}
+N 310 -60 310 -30 {lab=#net3}
+N 100 20 100 40 {lab=#net4}
+N 100 -30 100 20 {lab=#net4}
 N -40 -140 -40 -90 {lab=VP}
 N 220 -140 220 -120 {lab=VP}
 N 310 -140 310 -120 {lab=VP}
 N 100 -130 100 -90 {lab=VP}
 N 100 -140 100 -130 {lab=VP}
-N 70 20 70 70 {lab=#net5}
-N 70 20 100 20 {lab=#net5}
+N 70 20 70 70 {lab=#net4}
+N 70 20 100 20 {lab=#net4}
 N 310 30 310 50 {lab=Iout}
 N -60 210 170 210 {lab=VN}
 N -350 -130 -310 -130 {lab=VP}
@@ -43,8 +43,10 @@ N -170 50 -170 70 {lab=Iin}
 N -170 50 -80 50 {lab=Iin}
 N -30 70 -10 70 {lab=#net1}
 N -10 70 -10 150 {lab=#net1}
+N 220 -40 260 -40 {lab=#net2}
+N 260 -90 260 -40 {lab=#net2}
 C {code_shown.sym} 400 -140 0 0 {name=SPICE only_toplevel=false value="
-.param ccm_wid=3 ccm_len=0.45
+.param ccm_wid=0.5 ccm_len=0.5
 "}
 C {madvlsi/nmos3.sym} 170 150 0 0 {name=M4
 L=\{ccm_len\}
