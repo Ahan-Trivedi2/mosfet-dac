@@ -25,20 +25,22 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-rawfile=$netlist_dir/bbg.raw}
-N -180 -60 -180 -50 {lab=#net1}
-N -60 -120 -40 -120 {lab=#net2}
+rawfile=$netlist_dir/test_bbg.raw}
+N -130 -70 -130 -60 {lab=#net1}
+N -60 -130 -40 -130 {lab=#net2}
 N -40 -120 -40 -110 {lab=#net2}
 N -40 -110 -30 -110 {lab=#net2}
-N -60 -180 -40 -180 {lab=#net3}
-N -40 -200 -40 -180 {lab=#net3}
 N -40 -200 -30 -200 {lab=#net3}
 N -0 -170 -0 -160 {lab=#net4}
 N -0 -150 -0 -140 {lab=#net5}
-C {madvlsi/resistor.sym} -180 -20 0 0 {name=R1
+N -130 -100 -130 -70 {lab=#net1}
+N -40 -200 -40 -170 {lab=#net3}
+N -60 -170 -40 -170 {lab=#net3}
+N -40 -130 -40 -120 {lab=#net2}
+C {madvlsi/resistor.sym} -130 -30 0 0 {name=R1
 value=200k
 m=1}
-C {madvlsi/gnd.sym} -180 10 0 0 {name=l2 lab=GND}
+C {madvlsi/gnd.sym} -130 0 0 0 {name=l2 lab=GND}
 C {madvlsi/vsource.sym} -400 -240 0 0 {name=V1
 value=1.8}
 C {madvlsi/vdd.sym} -400 -270 0 0 {name=l3 lab=VDD}
@@ -48,8 +50,8 @@ C {code_shown.sym} -320 -390 0 0 {name=SPICE only_toplevel=false value="
 .dc V1 0 1.8 0.05
 .save all"}
 C {sky130_fd_pr/corner.sym} -480 -120 0 0 {name=CORNER only_toplevel=false corner=tt}
-C {madvlsi/gnd.sym} -120 -60 0 0 {name=l1 lab=GND}
-C {madvlsi/vdd.sym} -150 -220 0 0 {name=l5 lab=VDD}
+C {madvlsi/gnd.sym} -100 -100 0 0 {name=l1 lab=GND}
+C {madvlsi/vdd.sym} -100 -200 0 0 {name=l5 lab=VDD}
 C {madvlsi/nmos3.sym} 0 -110 0 0 {name=M1
 L=\{bbg_len\}
 W=\{bbg_wid\}
@@ -83,4 +85,4 @@ spiceprefix=X
 C {madvlsi/vdd.sym} 0 -230 0 0 {name=l6 lab=VDD}
 C {madvlsi/gnd.sym} 0 -80 0 0 {name=l7 lab=GND}
 C {madvlsi/ammeter1.sym} 0 -160 0 0 {name=Vmeas}
-C {bbg.sym} -200 -80 0 0 {}
+C {bbg.sym} -140 -100 0 0 {}
