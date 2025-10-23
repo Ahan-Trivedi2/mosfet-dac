@@ -9,6 +9,10 @@ N -50 -30 -30 -30 {lab=Vgate}
 N 0 -30 30 -30 {lab=VN}
 N 0 0 0 20 {lab=Idump}
 N 0 -80 0 -60 {lab=Iin}
+N -210 -90 -170 -90 {lab=VN}
+N -210 30 -180 30 {lab=Idump}
+N -210 -50 -170 -50 {lab=Iin}
+N -210 -10 -170 -10 {lab=Vgate}
 C {madvlsi/nmos4.sym} 0 -30 0 0 {name=M1
 L=\{dac_len\}
 W=\{dac_wid\}
@@ -27,3 +31,14 @@ C {lab_pin.sym} -50 -30 0 0 {name=p1 sig_type=std_logic lab=Vgate}
 C {lab_pin.sym} 30 -30 2 0 {name=p4 sig_type=std_logic lab=VN}
 C {lab_pin.sym} 0 20 2 0 {name=p9 sig_type=std_logic lab=Idump}
 C {lab_pin.sym} 0 -80 1 0 {name=p12 sig_type=std_logic lab=Iin}
+C {lab_pin.sym} -170 -90 2 0 {name=p16 sig_type=std_logic lab=VN}
+C {lab_pin.sym} -170 -50 2 0 {name=p17 sig_type=std_logic lab=Iin}
+C {lab_pin.sym} -170 -10 2 0 {name=p18 sig_type=std_logic lab=Vgate}
+C {lab_pin.sym} -180 30 2 0 {name=p24 sig_type=std_logic lab=Idump}
+C {iopin.sym} -210 -90 2 0 {name=p3 lab=VN}
+C {opin.sym} -210 30 2 0 {name=p6 lab=Idump}
+C {ipin.sym} -210 -50 0 0 {name=p19 lab=Iin}
+C {ipin.sym} -210 -10 0 0 {name=p25 lab=Vgate}
+C {code_shown.sym} -50 -170 0 0 {name=SPICE only_toplevel=false value="
+.param dac_wid=3 dac_len=0.45
+"}
