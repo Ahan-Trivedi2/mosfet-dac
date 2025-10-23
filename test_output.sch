@@ -5,32 +5,76 @@ V {}
 S {}
 F {}
 E {}
+B 2 -250 130 550 530 {flags=graph
+y1=-0.23184642
+y2=1.3178725
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=1e-07
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node="vbp
+vbn
+vc
+vin"
+color="4 5 6 8"
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
+B 2 550 130 1350 530 {flags=graph
+y1=-5.6717279e-08
+y2=1.4728824e-07
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=1e-07
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+dataset=-1
+unitx=1
+logx=0
+logy=0
+color=8
+node=i(viout)}
 N 260 -40 290 -40 {lab=Vin}
-N 210 -60 290 -60 {lab=#net1}
-N 80 -30 110 -30 {lab=#net2}
-N 80 -70 100 -70 {lab=#net3}
-N 100 -150 100 -70 {lab=#net3}
-N 100 -150 250 -150 {lab=#net3}
-N 250 -150 250 -90 {lab=#net3}
-N 250 -90 290 -90 {lab=#net3}
-N 10 0 10 20 {lab=#net4}
+N 80 -30 110 -30 {lab=Vbn}
+N 80 -70 100 -70 {lab=Vbp}
+N 100 -150 100 -70 {lab=Vbp}
+N 100 -150 250 -150 {lab=Vbp}
+N 250 -150 250 -90 {lab=Vbp}
+N 250 -90 290 -90 {lab=Vbp}
+N 10 0 10 20 {lab=#net1}
 N 290 -40 300 -40 {lab=Vin}
-N 290 -60 300 -60 {lab=#net1}
-N 290 -90 300 -90 {lab=#net3}
+N 290 -90 300 -90 {lab=Vbp}
 N 290 -40 290 40 {lab=Vin}
 N 460 -20 470 -20 {lab=Vout}
 N 450 -20 460 -20 {lab=Vout}
 N 300 -40 310 -40 {lab=Vin}
-N 300 -60 310 -60 {lab=#net1}
-N 300 -90 310 -90 {lab=#net3}
-N 410 -20 430 -20 {lab=#net5}
+N 300 -90 310 -90 {lab=Vbp}
+N 410 -20 430 -20 {lab=#net2}
 N 440 -20 450 -20 {lab=Vout}
+N 210 -60 240 -60 {lab=Vc}
+N 290 -60 310 -60 {lab=Vc}
+N 240 -60 290 -60 {lab=Vc}
 C {madvlsi/vsource.sym} -70 -70 0 0 {name=V2
 value=1.8}
 C {madvlsi/gnd.sym} -70 -40 0 0 {name=l2 lab=GND}
-C {isource.sym} 260 -10 2 0 {name=I0 value=100n}
+C {isource.sym} 260 -10 2 0 {name=Iin value=100n}
 C {madvlsi/gnd.sym} 260 20 0 0 {name=l3 lab=GND}
-C {code_shown.sym} -220 -170 0 0 {name=SPICE only_toplevel=false value=".dc Vout 0 1.8 0.05
+C {code_shown.sym} -220 -170 0 0 {name=SPICE only_toplevel=false value=".dc Iin 0 100n 1n
 .save all"
 }
 C {sky130_fd_pr/corner.sym} -230 -100 0 0 {name=CORNER only_toplevel=false corner=tt}
@@ -54,3 +98,6 @@ value=0.4}
 C {madvlsi/gnd.sym} 460 40 0 0 {name=l11 lab=GND}
 C {lab_pin.sym} 470 -20 2 0 {name=p2 sig_type=std_logic lab=Vout}
 C {madvlsi/ammeter1.sym} 430 -20 3 0 {name=Viout}
+C {lab_pin.sym} 240 -60 1 0 {name=p3 sig_type=std_logic lab=Vc}
+C {lab_pin.sym} 280 -90 1 0 {name=p4 sig_type=std_logic lab=Vbp}
+C {lab_pin.sym} 90 -30 3 0 {name=p5 sig_type=std_logic lab=Vbn}

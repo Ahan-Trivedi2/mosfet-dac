@@ -34,8 +34,7 @@ N -40 -90 -40 -30 {lab=VP}
 N -40 100 -40 210 {lab=VN}
 N -120 -40 -120 -0 {lab=Vbp}
 N -120 0 -80 0 {lab=Vbp}
-N -170 20 -170 30 {lab=Vc}
-N -170 30 -80 30 {lab=Vc}
+N -170 30 -80 30 {lab=#net5}
 N -170 50 -170 70 {lab=Iin}
 N -170 50 -80 50 {lab=Iin}
 N -30 70 -10 70 {lab=#net1}
@@ -143,7 +142,6 @@ spiceprefix=X
 }
 C {lab_pin.sym} -40 -140 0 0 {name=p1 sig_type=std_logic lab=VP}
 C {lab_pin.sym} -120 -40 0 0 {name=p5 sig_type=std_logic lab=Vbp}
-C {lab_pin.sym} -170 20 0 0 {name=p6 sig_type=std_logic lab=Vc}
 C {lab_pin.sym} -170 70 0 0 {name=p7 sig_type=std_logic lab=Iin}
 C {lab_pin.sym} 280 0 0 0 {name=p8 sig_type=std_logic lab=Vc}
 C {lab_pin.sym} -60 210 0 0 {name=p2 sig_type=std_logic lab=VN}
@@ -162,3 +160,4 @@ C {iopin.sym} -310 30 0 0 {name=p18 lab=VN}
 C {opin.sym} -310 70 0 0 {name=p19 lab=Iout}
 C {fvf.sym} -80 100 0 0 {name=X1}
 C {lab_pin.sym} 70 -60 0 0 {name=p20 sig_type=std_logic lab=Vbp}
+C {lab_pin.sym} -170 30 0 0 {name=p6 sig_type=std_logic lab=Vc}
