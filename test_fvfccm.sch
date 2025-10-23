@@ -26,43 +26,44 @@ logy=0
 color="4 7"
 node="i(vmeas)
 net1"}
-N -60 -20 -60 60 {lab=#net1}
-N -30 90 130 90 {lab=#net2}
-N 40 0 40 90 {lab=#net2}
-N -60 -190 -60 -80 {lab=#net2}
-N 40 -120 40 0 {lab=#net2}
-N -60 -120 40 -120 {lab=#net2}
-N -150 20 -60 20 {lab=#net1}
-N -190 -50 -90 -50 {lab=#net3}
+N -60 -20 -60 60 {lab=Vtest1}
+N -30 90 130 90 {lab=Vtest3}
+N 40 0 40 90 {lab=Vtest3}
+N -60 -190 -60 -80 {lab=Vtest3}
+N 40 -120 40 0 {lab=Vtest3}
+N -60 -120 40 -120 {lab=Vtest3}
+N -150 20 -60 20 {lab=Vtest1}
+N -190 -50 -90 -50 {lab=#net1}
 N -60 120 -60 160 {lab=GND}
-N -280 -50 -190 -50 {lab=#net3}
+N -280 -50 -190 -50 {lab=#net1}
 N -210 20 -210 40 {lab=GND}
-N 160 -20 160 60 {lab=#net4}
+N 160 -20 160 60 {lab=Vtest2}
 N 160 120 160 160 {lab=GND}
-N 160 20 280 20 {lab=#net4}
-N 280 -20 280 20 {lab=#net4}
-N 280 -190 280 -80 {lab=#net5}
-N 250 -100 250 -50 {lab=#net5}
-N 250 -100 280 -100 {lab=#net5}
-N 160 -50 160 -20 {lab=#net4}
-N 110 -50 160 -50 {lab=#net4}
-N 110 -160 110 -50 {lab=#net4}
-N 140 -190 170 -190 {lab=#net4}
-N 110 -140 150 -140 {lab=#net4}
-N 150 -190 150 -140 {lab=#net4}
-N 200 -160 220 -160 {lab=#net6}
-N 220 -160 220 -140 {lab=#net6}
-N 220 -80 220 -70 {lab=#net7}
-N 220 -60 220 -50 {lab=#net8}
-N 160 -110 190 -110 {lab=#net3}
-N -130 -110 160 -110 {lab=#net3}
-N -130 -110 -130 -50 {lab=#net3}
+N 160 20 280 20 {lab=Vtest2}
+N 280 -20 280 20 {lab=Vtest2}
+N 280 -190 280 -80 {lab=#net2}
+N 250 -100 250 -50 {lab=#net2}
+N 250 -100 280 -100 {lab=#net2}
+N 140 -190 170 -190 {lab=#net3}
+N 110 -140 150 -140 {lab=#net3}
+N 150 -190 150 -140 {lab=#net3}
+N 200 -160 220 -160 {lab=#net4}
+N 220 -160 220 -140 {lab=#net4}
+N 220 -80 220 -70 {lab=#net5}
+N 220 -60 220 -50 {lab=#net6}
+N 160 -110 190 -110 {lab=#net1}
+N -130 -110 160 -110 {lab=#net1}
+N -130 -110 -130 -50 {lab=#net1}
 N 110 -250 110 -220 {lab=VDD}
 N 200 -250 200 -220 {lab=VDD}
 N 110 -280 110 -250 {lab=VDD}
 N 200 -280 200 -250 {lab=VDD}
 N -60 -250 110 -250 {lab=VDD}
 N 200 -250 280 -250 {lab=VDD}
+N 110 -80 160 -80 {lab=#net3}
+N 110 -160 110 -140 {lab=#net3}
+N 110 -140 110 -80 {lab=#net3}
+N -90 -50 130 -50 {lab=#net1}
 C {madvlsi/nmos3.sym} -60 -50 0 0 {name=M1
 L=0.15
 W=3
@@ -190,3 +191,21 @@ C {madvlsi/vdd.sym} -220 -250 0 0 {name=l8 lab=VDD}
 C {madvlsi/vsource.sym} 220 -20 0 0 {name=V3
 value=0.4}
 C {madvlsi/gnd.sym} 220 10 0 0 {name=l9 lab=GND}
+C {lab_wire.sym} -60 20 2 0 {name=p1 sig_type=std_logic lab=Vtest1}
+C {lab_wire.sym} 160 20 0 0 {name=p2 sig_type=std_logic lab=Vtest2}
+C {lab_wire.sym} -10 90 2 0 {name=p3 sig_type=std_logic lab=Vtest3}
+C {madvlsi/nmos3.sym} 160 -50 0 0 {name=M8
+L=0.15
+W=3
+body=GND
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}

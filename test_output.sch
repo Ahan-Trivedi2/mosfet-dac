@@ -5,49 +5,6 @@ V {}
 S {}
 F {}
 E {}
-B 2 -250 130 550 530 {flags=graph
-y1=-1.0776786e-08
-y2=2.9741733e-07
-ypos1=0
-ypos2=2
-divy=5
-subdivy=1
-unity=1
-x1=0
-x2=1.8
-divx=5
-subdivx=1
-xlabmag=1.0
-ylabmag=1.0
-node=i(viout)
-color=4
-dataset=-1
-unitx=1
-logx=0
-logy=0
-}
-B 2 -250 540 550 940 {flags=graph
-y1=-0.022272475
-y2=0.56868986
-ypos1=0
-ypos2=2
-divy=5
-subdivy=1
-unity=1
-x1=0
-x2=1.8
-divx=5
-subdivx=1
-xlabmag=1.0
-ylabmag=1.0
-node="vout
-vin"
-color="4 7"
-dataset=-1
-unitx=1
-logx=0
-logy=0
-}
 N 260 -40 290 -40 {lab=Vin}
 N 210 -60 290 -60 {lab=#net1}
 N 80 -30 110 -30 {lab=#net2}

@@ -70,7 +70,7 @@ C {lab_pin.sym} -120 140 3 0 {name=p2 sig_type=std_logic lab=VN}
 C {opin.sym} 130 -50 0 0 {name=p18 lab=Vdsg}
 C {lab_pin.sym} 140 90 2 0 {name=p6 sig_type=std_logic lab=Vdsg}
 C {code_shown.sym} 40 10 0 0 {name=SPICE only_toplevel=false value="
-.param fvf_wid=1 fvf_len=0.15
+.param fvf_wid=3 fvf_len=1.5
 "}
 C {madvlsi/pmos3.sym} -120 -150 0 0 {name=M1
 L=\{fvf_len\}
