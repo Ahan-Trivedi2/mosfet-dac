@@ -18,8 +18,8 @@ N 270 -180 300 -180 {lab=A}
 N 270 -140 300 -140 {lab=VN}
 N 270 -100 300 -100 {lab=Y}
 C {madvlsi/pmos3.sym} 80 -180 0 0 {name=M2
-L=\{dac_len\}
-W=\{dac_wid\}
+L=\{inv_len\}
+W=\{inv_wid\}
 body=VP
 nf=1
 mult=1
@@ -33,8 +33,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 80 -100 0 0 {name=M1
-L=\{dac_len\}
-W=\{dac_wid\}
+L=\{inv_len\}
+W=\{inv_wid\}
 body=VN
 nf=1
 mult=1
@@ -59,3 +59,6 @@ C {lab_pin.sym} 80 -230 0 0 {name=p2 sig_type=std_logic lab=VP}
 C {lab_pin.sym} 80 -50 3 0 {name=p13 sig_type=std_logic lab=VN}
 C {lab_pin.sym} -20 -140 0 0 {name=p14 sig_type=std_logic lab=A}
 C {lab_pin.sym} 150 -140 2 0 {name=p1 sig_type=std_logic lab=Y}
+C {code_shown.sym} -70 -300 0 0 {name=SPICE2 only_toplevel=false value="
+.param inv_wid=1 inv_len=0.15
+"}

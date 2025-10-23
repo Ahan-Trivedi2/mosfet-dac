@@ -41,9 +41,6 @@ C {lab_pin.sym} 360 -230 2 0 {name=p11 sig_type=std_logic lab=Iprime}
 C {lab_pin.sym} 130 -230 0 0 {name=p12 sig_type=std_logic lab=Iin}
 C {lab_pin.sym} 310 -80 0 0 {name=p13 sig_type=std_logic lab=D}
 C {lab_pin.sym} 100 -100 0 0 {name=p14 sig_type=std_logic lab=D}
-C {code_shown.sym} 490 -210 0 0 {name=SPICE only_toplevel=false value="
-.param dac_wid=3 dac_len=0.45
-"}
 C {lab_pin.sym} -70 -300 2 0 {name=p15 sig_type=std_logic lab=Iprime}
 C {lab_pin.sym} -70 -260 2 0 {name=p16 sig_type=std_logic lab=VN}
 C {lab_pin.sym} -70 -220 2 0 {name=p17 sig_type=std_logic lab=Iin}
@@ -55,7 +52,7 @@ C {lab_pin.sym} -70 -20 2 0 {name=p24 sig_type=std_logic lab=Idump}
 C {madvlsi/nmos3.sym} 150 -180 0 0 {name=M5
 L=\{dac_len\}
 W=\{dac_wid\}
-body=GND
+body=VN
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -70,7 +67,7 @@ spiceprefix=X
 C {madvlsi/nmos3.sym} 250 -230 3 0 {name=M6
 L=\{dac_len\}
 W=\{dac_wid\}
-body=GND
+body=VN
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -85,7 +82,7 @@ spiceprefix=X
 C {madvlsi/nmos3.sym} 150 -100 0 0 {name=M2
 L=\{dac_len\}
 W=\{dac_wid\}
-body=GND
+body=VN
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -100,7 +97,7 @@ spiceprefix=X
 C {madvlsi/nmos3.sym} 440 -100 0 0 {name=M4
 L=\{dac_len\}
 W=\{dac_wid\}
-body=GND
+body=VN
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
