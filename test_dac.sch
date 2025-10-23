@@ -50,7 +50,6 @@ logy=0
 color=8
 node=i(Viout)
 rawfile=$netlist_dir/test_dac.raw}
-N 260 -40 290 -40 {lab=Iout}
 N 80 -30 110 -30 {lab=Vbn}
 N 80 -70 100 -70 {lab=Vbp}
 N 100 -150 100 -70 {lab=Vbp}
@@ -58,11 +57,9 @@ N 100 -150 250 -150 {lab=Vbp}
 N 250 -150 250 -90 {lab=Vbp}
 N 250 -90 290 -90 {lab=Vbp}
 N 10 0 10 20 {lab=#net1}
-N 290 -40 300 -40 {lab=Iout}
 N 290 -90 300 -90 {lab=Vbp}
 N 460 -20 470 -20 {lab=Vout}
 N 450 -20 460 -20 {lab=Vout}
-N 300 -40 310 -40 {lab=Iout}
 N 300 -90 310 -90 {lab=Vbp}
 N 410 -20 430 -20 {lab=#net2}
 N 440 -20 450 -20 {lab=Vout}
@@ -95,12 +92,15 @@ N -130 -540 -130 -430 {lab=Iout}
 N -90 -540 -90 -400 {lab=Idump}
 N 440 -580 440 -400 {lab=Idump}
 N -90 -400 440 -400 {lab=Idump}
-N 440 -400 500 -400 {lab=Idump}
 N 490 -420 500 -420 {lab=Vc}
 N 480 -450 500 -450 {lab=Vbp}
 N -130 -430 350 -430 {lab=Iout}
 N -200 -620 -160 -620 {lab=#net4}
 N -300 -620 -210 -620 {lab=#net3}
+N 260 -40 280 -40 {lab=Iout}
+N 290 -40 310 -40 {lab=#net5}
+N 440 -400 450 -400 {lab=Idump}
+N 460 -400 500 -400 {lab=#net6}
 C {madvlsi/vsource.sym} -70 -70 0 0 {name=V2
 value=1.8}
 C {madvlsi/gnd.sym} -70 -40 0 0 {name=l2 lab=GND}
@@ -236,7 +236,7 @@ C {devices/code.sym} -280 -420 0 0 {name=SPICE1 only_toplevel=false value="
     alter vb6 $&b6
     save all
     op
-    wrdata ~/Documents/mosfet-dac/test_dac.txt code v(sb0) v(sb1) v(sb2) v(sb3) v(sb4) v(sb5) v(sb6) i(Viin) i(Viout) v(Iout) v(Idump)
+    wrdata ~/Documents/mosfet-dac/test_dac.txt code v(sb0) v(sb1) v(sb2) v(sb3) v(sb4) v(sb5) v(sb6) i(Viin) i(Vidac) i(Vidump) i(Viout) v(Iout) v(Idump)
     if code eq 0
       set appendwrite
       set wr_vecnames = FALSE
@@ -296,3 +296,5 @@ C {lab_pin.sym} 90 -540 1 0 {name=p21 sig_type=std_logic lab=sb3}
 C {lab_pin.sym} 10 -540 1 0 {name=p22 sig_type=std_logic lab=sb4}
 C {lab_pin.sym} -70 -540 1 0 {name=p23 sig_type=std_logic lab=sb5}
 C {lab_pin.sym} -150 -540 1 0 {name=p24 sig_type=std_logic lab=sb6}
+C {madvlsi/ammeter1.sym} 280 -40 3 0 {name=Vidac}
+C {madvlsi/ammeter1.sym} 450 -400 3 0 {name=Vidump}
