@@ -6,8 +6,8 @@ S {}
 F {}
 E {}
 B 2 -630 70 170 470 {flags=graph
-y1=-1.6674368e-08
-y2=1.656565e-07
+y1=7.9e-30
+y2=1.8e-12
 ypos1=0
 ypos2=2
 divy=5
@@ -26,6 +26,28 @@ unitx=1
 logx=0
 logy=0
 rawfile=$netlist_dir/test_bbg.raw}
+B 2 170 70 970 470 {flags=graph
+y1=-1.3e-18
+y2=1.7
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=1.8
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+dataset=-1
+unitx=1
+logx=0
+logy=0
+rawfile=$netlist_dir/test_bbg.raw
+color="8 7"
+node="net2
+net3"}
 N -130 -70 -130 -60 {lab=#net1}
 N -60 -130 -40 -130 {lab=#net2}
 N -40 -120 -40 -110 {lab=#net2}
@@ -46,7 +68,7 @@ value=1.8}
 C {madvlsi/vdd.sym} -400 -270 0 0 {name=l3 lab=VDD}
 C {madvlsi/gnd.sym} -400 -210 0 0 {name=l4 lab=GND}
 C {code_shown.sym} -320 -390 0 0 {name=SPICE only_toplevel=false value="
-.param bbg_wid=1 bbg_len=0.5 a=2
+.param bbg_wid=3 bbg_len=1.5 a=2
 .dc V1 0 1.8 0.05
 .save all"}
 C {sky130_fd_pr/corner.sym} -480 -120 0 0 {name=CORNER only_toplevel=false corner=tt}
