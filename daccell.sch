@@ -34,7 +34,6 @@ C {inverter.sym} 300 -80 0 0 {name=X1}
 C {lab_pin.sym} 100 -180 0 0 {name=p1 sig_type=std_logic lab=Vgate}
 C {lab_pin.sym} 250 -180 2 0 {name=p2 sig_type=std_logic lab=Vgate}
 C {lab_pin.sym} 360 -60 3 0 {name=p7 sig_type=std_logic lab=VN}
-C {lab_pin.sym} 360 -100 1 0 {name=p8 sig_type=std_logic lab=VP}
 C {lab_pin.sym} 440 -50 2 0 {name=p9 sig_type=std_logic lab=Idump}
 C {lab_pin.sym} 150 -50 2 0 {name=p10 sig_type=std_logic lab=Iout}
 C {lab_pin.sym} 360 -230 2 0 {name=p11 sig_type=std_logic lab=Iprime}
@@ -117,3 +116,4 @@ C {ipin.sym} -110 -220 0 0 {name=p19 lab=Iin}
 C {opin.sym} -110 -300 2 0 {name=p21 lab=Iprime}
 C {ipin.sym} -110 -180 0 0 {name=p25 lab=Vgate}
 C {ipin.sym} -110 -140 0 0 {name=p26 lab=D}
+C {lab_pin.sym} 360 -100 1 0 {name=p8 sig_type=std_logic lab=Vgate}

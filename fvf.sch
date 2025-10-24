@@ -10,7 +10,6 @@ N -120 0 -120 60 {lab=Vin}
 N -90 90 140 90 {lab=Vdsg}
 N -120 -100 -0 -100 {lab=Vdsg}
 N -0 -100 -0 90 {lab=Vdsg}
-N -200 -30 -150 -30 {lab=Vc}
 N -200 -150 -150 -150 {lab=Vbp}
 N -120 120 -120 140 {lab=VN}
 N -120 -200 -120 -180 {lab=VP}
@@ -21,6 +20,7 @@ N 80 -140 130 -140 {lab=Vc}
 N 80 -110 130 -110 {lab=Vin}
 N 80 -80 130 -80 {lab=VN}
 N 80 -50 130 -50 {lab=Vdsg}
+N -230 -30 -150 -30 {lab=Vc}
 C {madvlsi/nmos3.sym} -120 -30 0 0 {name=M3
 L=\{fvf_len\}
 W=\{fvf_wid\}
@@ -62,7 +62,7 @@ C {lab_pin.sym} -120 -200 1 0 {name=p13 sig_type=std_logic lab=VP}
 C {ipin.sym} 130 -170 2 0 {name=p14 lab=Vbp}
 C {lab_pin.sym} -200 -150 0 0 {name=p3 sig_type=std_logic lab=Vbp}
 C {ipin.sym} 130 -140 2 0 {name=p15 lab=Vc}
-C {lab_pin.sym} -200 -30 0 0 {name=p4 sig_type=std_logic lab=Vc}
+C {lab_pin.sym} -230 -30 0 0 {name=p4 sig_type=std_logic lab=Vc}
 C {ipin.sym} 130 -110 2 0 {name=p16 lab=Vin}
 C {lab_pin.sym} -200 40 0 0 {name=p5 sig_type=std_logic lab=Vin}
 C {iopin.sym} 130 -80 0 0 {name=p17 lab=VN}

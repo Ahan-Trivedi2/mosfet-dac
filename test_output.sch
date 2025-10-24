@@ -21,9 +21,10 @@ xlabmag=1.0
 ylabmag=1.0
 node="vbp
 vbn
-vc
+vcn
+vcp
 vin"
-color="4 5 6 8"
+color="4 5 6 10 8"
 dataset=-1
 unitx=1
 logx=0
@@ -66,9 +67,11 @@ N 300 -40 310 -40 {lab=Vin}
 N 300 -90 310 -90 {lab=Vbp}
 N 410 -20 430 -20 {lab=#net2}
 N 440 -20 450 -20 {lab=Vout}
-N 210 -60 240 -60 {lab=Vc}
-N 290 -60 310 -60 {lab=Vc}
-N 240 -60 290 -60 {lab=Vc}
+N 210 -60 240 -60 {lab=Vcp}
+N 410 -60 440 -60 {lab=Vcp}
+N 310 -60 410 -60 {lab=Vcp}
+N 700 -30 800 -30 {lab=Vcn}
+N 580 -60 600 -60 {lab=Vbp}
 C {madvlsi/vsource.sym} -70 -70 0 0 {name=V2
 value=1.8}
 C {madvlsi/gnd.sym} -70 -40 0 0 {name=l2 lab=GND}
@@ -98,6 +101,12 @@ value=0.4}
 C {madvlsi/gnd.sym} 460 40 0 0 {name=l11 lab=GND}
 C {lab_pin.sym} 470 -20 2 0 {name=p2 sig_type=std_logic lab=Vout}
 C {madvlsi/ammeter1.sym} 430 -20 3 0 {name=Viout}
-C {lab_pin.sym} 240 -60 1 0 {name=p3 sig_type=std_logic lab=Vc}
+C {lab_pin.sym} 240 -60 1 0 {name=p3 sig_type=std_logic lab=Vcp}
 C {lab_pin.sym} 280 -90 1 0 {name=p4 sig_type=std_logic lab=Vbp}
 C {lab_pin.sym} 90 -30 3 0 {name=p5 sig_type=std_logic lab=Vbn}
+C {lab_pin.sym} 440 -60 1 0 {name=p6 sig_type=std_logic lab=Vcp}
+C {ncbc.sym} 600 30 0 0 {name=X1}
+C {madvlsi/vdd.sym} 650 -90 0 0 {name=l46 lab=VDD}
+C {madvlsi/gnd.sym} 650 30 0 0 {name=l47 lab=GND}
+C {lab_pin.sym} 580 -60 0 0 {name=p26 sig_type=std_logic lab=Vbp}
+C {lab_pin.sym} 730 -30 1 0 {name=p7 sig_type=std_logic lab=Vcn}

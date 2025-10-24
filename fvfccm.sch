@@ -23,7 +23,7 @@ N 310 30 310 50 {lab=Iout}
 N -60 210 170 210 {lab=VN}
 N -350 -130 -310 -130 {lab=VP}
 N -350 -90 -310 -90 {lab=Vbp}
-N -350 -50 -310 -50 {lab=Vc}
+N -350 -50 -310 -50 {lab=Vcn}
 N -350 -10 -310 -10 {lab=Iin}
 N -350 30 -310 30 {lab=VN}
 N -350 70 -310 70 {lab=Iout}
@@ -34,7 +34,7 @@ N -40 -90 -40 -30 {lab=VP}
 N -40 100 -40 210 {lab=VN}
 N -120 -40 -120 -0 {lab=Vbp}
 N -120 0 -80 0 {lab=Vbp}
-N -170 30 -80 30 {lab=Vc}
+N -170 30 -80 30 {lab=Vcn}
 N -170 50 -170 70 {lab=Iin}
 N -170 50 -80 50 {lab=Iin}
 N -30 70 -10 70 {lab=#net1}
@@ -47,6 +47,7 @@ N 220 -60 220 -40 {lab=#net2}
 N 220 0 220 60 {lab=#net2}
 N 70 30 70 70 {lab=#net4}
 N 70 30 100 30 {lab=#net4}
+N -350 110 -310 110 {lab=Vcp}
 C {code_shown.sym} 400 -140 0 0 {name=SPICE only_toplevel=false value="
 .param ccm_wid=3 ccm_len=1.5
 "}
@@ -143,21 +144,23 @@ spiceprefix=X
 C {lab_pin.sym} -40 -140 0 0 {name=p1 sig_type=std_logic lab=VP}
 C {lab_pin.sym} -120 -40 0 0 {name=p5 sig_type=std_logic lab=Vbp}
 C {lab_pin.sym} -170 70 0 0 {name=p7 sig_type=std_logic lab=Iin}
-C {lab_pin.sym} 280 0 0 0 {name=p8 sig_type=std_logic lab=Vc}
+C {lab_pin.sym} 280 0 0 0 {name=p8 sig_type=std_logic lab=Vcp}
 C {lab_pin.sym} -60 210 0 0 {name=p2 sig_type=std_logic lab=VN}
 C {lab_pin.sym} 310 50 0 0 {name=p3 sig_type=std_logic lab=Iout}
 C {lab_pin.sym} -350 -130 0 0 {name=p4 sig_type=std_logic lab=VP}
 C {lab_pin.sym} -350 -90 0 0 {name=p9 sig_type=std_logic lab=Vbp}
-C {lab_pin.sym} -350 -50 0 0 {name=p10 sig_type=std_logic lab=Vc}
+C {lab_pin.sym} -350 -50 0 0 {name=p10 sig_type=std_logic lab=Vcn}
 C {lab_pin.sym} -350 -10 0 0 {name=p11 sig_type=std_logic lab=Iin}
 C {lab_pin.sym} -350 30 0 0 {name=p12 sig_type=std_logic lab=VN}
 C {lab_pin.sym} -350 70 0 0 {name=p13 sig_type=std_logic lab=Iout}
 C {ipin.sym} -310 -90 2 0 {name=p15 lab=Vbp}
-C {ipin.sym} -310 -50 2 0 {name=p16 lab=Vc}
+C {ipin.sym} -310 -50 2 0 {name=p16 lab=Vcn}
 C {ipin.sym} -310 -10 2 0 {name=p17 lab=Iin}
 C {iopin.sym} -310 -130 0 0 {name=p14 lab=VP}
 C {iopin.sym} -310 30 0 0 {name=p18 lab=VN}
 C {opin.sym} -310 70 0 0 {name=p19 lab=Iout}
 C {fvf.sym} -80 100 0 0 {name=X1}
 C {lab_pin.sym} 70 -60 0 0 {name=p20 sig_type=std_logic lab=Vbp}
-C {lab_pin.sym} -170 30 0 0 {name=p6 sig_type=std_logic lab=Vc}
+C {lab_pin.sym} -170 30 0 0 {name=p6 sig_type=std_logic lab=Vcn}
+C {lab_pin.sym} -350 110 0 0 {name=p21 sig_type=std_logic lab=Vcp}
+C {ipin.sym} -310 110 2 0 {name=p22 lab=Vcp}

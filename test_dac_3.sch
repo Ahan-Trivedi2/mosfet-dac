@@ -5,51 +5,29 @@ V {}
 S {}
 F {}
 E {}
-B 2 -250 130 550 530 {flags=graph
-y1=-0.23184642
-y2=1.3178725
+B 2 -420 -220 380 180 {flags=graph
+y1=-4.4812868e-09
+y2=1.1188945e-07
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=1e-07
+x1=0.0018573747
+x2=1.4418574
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node="vbp
-vbn
-vc
-vin"
-color="4 5 6 8"
+node="i(vidac)
+i(vidump)
+i(viin)"
+color="4 7 8"
 dataset=-1
 unitx=1
 logx=0
 logy=0
-}
-B 2 550 130 1350 530 {flags=graph
-y1=-5.6717279e-08
-y2=1.4728824e-07
-ypos1=0
-ypos2=2
-divy=5
-subdivy=1
-unity=1
-x1=0
-x2=1e-07
-divx=5
-subdivx=1
-xlabmag=1.0
-ylabmag=1.0
-dataset=-1
-unitx=1
-logx=0
-logy=0
-color=8
-node=i(Viout)
-rawfile=$netlist_dir/test_dac.raw}
+rawfile=$netlist_dir/test_dac_3.raw}
 N 410 -720 410 -650 {lab=VDD}
 N 330 -720 330 -650 {lab=VDD}
 N 250 -720 250 -650 {lab=VDD}
@@ -149,65 +127,6 @@ C {madvlsi/gnd.sym} 10 -480 0 0 {name=l33 lab=GND}
 C {madvlsi/gnd.sym} -70 -480 0 0 {name=l34 lab=GND}
 C {madvlsi/gnd.sym} -150 -480 0 0 {name=l35 lab=GND}
 C {madvlsi/gnd.sym} 440 -650 2 0 {name=l19 lab=GND}
-C {devices/code.sym} -300 -420 0 0 {name=SPICE1 only_toplevel=false value="
-.control
-  set wr_vecnames
-  set wr_singlescale
-  let code = 0
-  while code < 128
-    if code eq 0
-      let b0 = 0
-    else
-      let b0 = code % 2
-    end
-    if floor(code / 2) eq 0
-      let b1 = 0
-    else
-      let b1 = floor(code / 2) % 2
-    end
-    if floor(code / 4) eq 0
-      let b2 = 0
-    else
-      let b2 = floor(code / 4) % 2
-    end
-    if floor(code / 8) eq 0
-      let b3 = 0
-    else
-      let b3 = floor(code / 8) % 2
-    end
-    if floor(code / 16) eq 0
-      let b4 = 0
-    else 
-      let b4 = floor(code / 16) % 2
-    end
-    if floor(code / 32) eq 0
-      let b5 = 0
-    else
-      let b5 = floor(code / 32) % 2
-    end
-    if floor(code / 64) eq 0
-      let b6 = 0
-    else
-      let b6 = floor(code / 64) % 2
-    end
-    alter vb0 $&b0
-    alter vb1 $&b1
-    alter vb2 $&b2
-    alter vb3 $&b3
-    alter vb4 $&b4
-    alter vb5 $&b5
-    alter vb6 $&b6
-    save all
-    op
-    wrdata ~/Documents/mosfet-dac/test_dac.txt code v(sb0) v(sb1) v(sb2) v(sb3) v(sb4) v(sb5) v(sb6) i(Viin) i(Vidac) i(Vidump) v(Iout) v(Idump)
-    if code eq 0
-      set appendwrite
-      set wr_vecnames = FALSE
-    end
-    let code = code + 1
-  end
-  quit
-.endc"}
 C {madvlsi/ammeter1.sym} -210 -620 3 0 {name=Viin}
 C {madvlsi/depvsrc.sym} 330 -510 0 0 {name=B0
 func=1.8*v(b0)}
@@ -286,9 +205,12 @@ C {madvlsi/vdd.sym} 750 -310 0 0 {name=l7 lab=VDD}
 C {lab_pin.sym} 690 -280 0 0 {name=p4 sig_type=std_logic lab=Vbp}
 C {lab_pin.sym} 520 -430 1 0 {name=p8 sig_type=std_logic lab=Iout}
 C {lab_pin.sym} 470 -400 3 0 {name=p5 sig_type=std_logic lab=Idump}
-C {code_shown.sym} 600 -640 0 0 {name=SPICE2 only_toplevel=false value="
+C {code_shown.sym} 600 -700 0 0 {name=SPICE2 only_toplevel=false value="
 .param dac_wid=1 dac_len=1.5
 "}
 C {code_shown.sym} -490 -550 0 0 {name=SPICE3 only_toplevel=false value="
 .param bias_wid=3 bias_len=1.5
+"}
+C {code_shown.sym} 610 -620 0 0 {name=SPICE1 only_toplevel=false value="
+.dc V4 0 1.8 0.02
 "}
