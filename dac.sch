@@ -145,7 +145,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {code_shown.sym} -670 -280 0 0 {name=SPICE2 only_toplevel=false value="
-.param bias_wid=3 bias_len=1.5
+.param bias_wid=3 bias_len=0.5
 "}
 C {code_shown.sym} -670 -180 0 0 {name=SPICE3 only_toplevel=false value="
 .param dac_wid=0.75 dac_len=3
@@ -195,5 +195,6 @@ C {lab_pin.sym} 340 -270 3 0 {name=p51 sig_type=std_logic lab=Res}
 C {lab_pin.sym} -260 70 2 0 {name=p52 sig_type=std_logic lab=Res
 }
 C {opin.sym} -300 70 2 0 {name=p53 lab=Res}
-C {lab_pin.sym} -340 -420 0 0 {name=p29 sig_type=std_logic lab=Vbp}
 C {lab_pin.sym} 580 -140 1 0 {name=p6 sig_type=std_logic lab=Vcn}
+C {lab_pin.sym} -390 -440 0 0 {name=p29 sig_type=std_logic lab=Vcp}
+C {lab_pin.sym} -340 -420 0 0 {name=p54 sig_type=std_logic lab=Vbp}

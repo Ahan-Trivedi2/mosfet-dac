@@ -6,8 +6,8 @@ S {}
 F {}
 E {}
 B 2 -60 120 740 520 {flags=graph
-y1=2.573516e-09
-y2=6.5019981e-08
+y1=9.4e-09
+y2=1.9e-08
 ypos1=0
 ypos2=2
 divy=5
@@ -36,7 +36,7 @@ C {madvlsi/gnd.sym} 180 50 0 0 {name=l2 lab=GND}
 C {sky130_fd_pr/corner.sym} 20 -10 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {madvlsi/vdd.sym} 180 -10 0 0 {name=l5 lab=VDD}
 C {madvlsi/resistor.sym} 640 10 0 0 {name=R1
-value=200k
+value=500k
 m=1}
 C {madvlsi/gnd.sym} 640 40 0 0 {name=l10 lab=GND}
 C {madvlsi/vsource.sym} 930 -80 0 0 {name=Vout
