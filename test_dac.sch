@@ -195,9 +195,10 @@ C {lab_pin.sym} 580 -110 0 0 {name=p6 sig_type=std_logic lab=sb3}
 C {lab_pin.sym} 580 -90 0 0 {name=p7 sig_type=std_logic lab=sb4}
 C {lab_pin.sym} 580 -70 0 0 {name=p8 sig_type=std_logic lab=sb5}
 C {lab_pin.sym} 580 -50 0 0 {name=p9 sig_type=std_logic lab=sb6}
-C {code_shown.sym} 1010 0 0 0 {name=SPICE2 only_toplevel=false value="
-.param bbg_wid=1 bbg_len=3 a=2
-.param cbc_wid=1 cbc_len=3 n=10 m=10
-.param fvf_wid=1 fvf_len=3
-.param ccm_wid=1 ccm_len=3
+C {code_shown.sym} 1000 -20 0 0 {name=SPICE2 only_toplevel=false value="
+.param bbg_wid=1 bbg_len=5 a=2
+.param cbc_wid=1 cbc_len=5 n=10 m=10
+.param fvf_wid=1 fvf_len=5
+.param ccm_wid=1 ccm_len=5 ib=1/20
+.param dac_wid=0.75 dac_len=10
 "}

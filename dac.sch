@@ -157,9 +157,6 @@ spiceprefix=X
 C {code_shown.sym} -810 -280 0 0 {name=SPICE2 only_toplevel=false value="
 .param bias_wid=\{bbg_wid\} bias_len=\{bbg_len\}
 "}
-C {code_shown.sym} -670 -180 0 0 {name=SPICE3 only_toplevel=false value="
-.param dac_wid=0.75 dac_len=3
-"}
 C {ncbc.sym} 460 -80 0 0 {name=X1}
 C {lab_pin.sym} 440 -420 0 0 {name=p26 sig_type=std_logic lab=Vbp}
 C {lab_pin.sym} 280 -400 2 0 {name=p2 sig_type=std_logic lab=VP}
