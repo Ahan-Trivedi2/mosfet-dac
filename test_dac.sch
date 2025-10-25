@@ -60,7 +60,7 @@ C {madvlsi/gnd.sym} 180 50 0 0 {name=l2 lab=GND}
 C {sky130_fd_pr/corner.sym} 20 -10 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {madvlsi/vdd.sym} 180 -10 0 0 {name=l5 lab=VDD}
 C {madvlsi/resistor.sym} 640 10 0 0 {name=R1
-value=200k
+value=100k
 m=1}
 C {madvlsi/gnd.sym} 640 40 0 0 {name=l10 lab=GND}
 C {madvlsi/vsource.sym} 930 -80 0 0 {name=Vout
@@ -195,3 +195,9 @@ C {lab_pin.sym} 580 -110 0 0 {name=p6 sig_type=std_logic lab=sb3}
 C {lab_pin.sym} 580 -90 0 0 {name=p7 sig_type=std_logic lab=sb4}
 C {lab_pin.sym} 580 -70 0 0 {name=p8 sig_type=std_logic lab=sb5}
 C {lab_pin.sym} 580 -50 0 0 {name=p9 sig_type=std_logic lab=sb6}
+C {code_shown.sym} 1010 0 0 0 {name=SPICE2 only_toplevel=false value="
+.param bbg_wid=1 bbg_len=3 a=2
+.param cbc_wid=1 cbc_len=3 n=10 m=10
+.param fvf_wid=1 fvf_len=3
+.param ccm_wid=1 ccm_len=3
+"}

@@ -6,8 +6,8 @@ S {}
 F {}
 E {}
 B 2 -630 70 170 470 {flags=graph
-y1=7.9e-30
-y2=1.8e-12
+y1=3.3e-25
+y2=2.3e-08
 ypos1=0
 ypos2=2
 divy=5
@@ -27,8 +27,8 @@ logx=0
 logy=0
 rawfile=$netlist_dir/test_bbg.raw}
 B 2 170 70 970 470 {flags=graph
-y1=-1.3e-18
-y2=1.7
+y1=-5.4e-20
+y2=0.88
 ypos1=0
 ypos2=2
 divy=5
@@ -68,15 +68,16 @@ value=1.8}
 C {madvlsi/vdd.sym} -400 -270 0 0 {name=l3 lab=VDD}
 C {madvlsi/gnd.sym} -400 -210 0 0 {name=l4 lab=GND}
 C {code_shown.sym} -320 -390 0 0 {name=SPICE only_toplevel=false value="
-.param bbg_wid=3 bbg_len=1.5 a=2
+.param bbg_wid=1 bbg_len=1.5 a=2
+.param bias_wid=1 bias_len=1.5
 .dc V1 0 1.8 0.05
 .save all"}
 C {sky130_fd_pr/corner.sym} -480 -120 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {madvlsi/gnd.sym} -100 -100 0 0 {name=l1 lab=GND}
 C {madvlsi/vdd.sym} -100 -200 0 0 {name=l5 lab=VDD}
 C {madvlsi/nmos3.sym} 0 -110 0 0 {name=M1
-L=\{bbg_len\}
-W=\{bbg_wid\}
+L=\{bias_len\}
+W=\{bias_wid\}
 body=GND
 nf=1
 mult=1
@@ -90,8 +91,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 0 -200 0 0 {name=M2
-L=\{bbg_len\}
-W=\{bbg_wid\}
+L=\{bias_len\}
+W=\{bias_wid\}
 body=VDD
 nf=1
 mult=1

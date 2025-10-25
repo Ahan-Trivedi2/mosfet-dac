@@ -36,7 +36,7 @@ C {madvlsi/gnd.sym} 180 50 0 0 {name=l2 lab=GND}
 C {sky130_fd_pr/corner.sym} 20 -10 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {madvlsi/vdd.sym} 180 -10 0 0 {name=l5 lab=VDD}
 C {madvlsi/resistor.sym} 640 10 0 0 {name=R1
-value=500k
+value=100k
 m=1}
 C {madvlsi/gnd.sym} 640 40 0 0 {name=l10 lab=GND}
 C {madvlsi/vsource.sym} 930 -80 0 0 {name=Vout
@@ -115,4 +115,10 @@ C {lab_pin.sym} 580 -50 0 0 {name=p9 sig_type=std_logic lab=sb6}
 C {code_shown.sym} 250 20 0 0 {name=SPICE2 only_toplevel=false value="
 .dc Vout 0 1.8 0.02
 .save all
+"}
+C {code_shown.sym} 770 90 0 0 {name=SPICE1 only_toplevel=false value="
+.param bbg_wid=1 bbg_len=3 a=2
+.param cbc_wid=1 cbc_len=3 n=10 m=10
+.param fvf_wid=1 fvf_len=3
+.param ccm_wid=1 ccm_len=3
 "}

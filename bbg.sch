@@ -161,6 +161,3 @@ C {iopin.sym} 100 100 1 0 {name=p2 lab=VN}
 C {iopin.sym} -160 100 1 0 {name=p3 lab=RES}
 C {opin.sym} 270 -70 0 0 {name=p4 lab=VBP}
 C {opin.sym} 270 50 0 0 {name=p5 lab=VBN}
-C {code_shown.sym} -140 -240 0 0 {name=SPICE only_toplevel=false value="
-.param bbg_wid=1 bbg_len=0.5 a=2
-"}

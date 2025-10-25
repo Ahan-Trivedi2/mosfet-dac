@@ -132,6 +132,3 @@ C {iopin.sym} -120 -170 2 0 {name=p7 lab=VP}
 C {iopin.sym} -120 -140 2 0 {name=p8 lab=VN}
 C {opin.sym} -120 -110 2 0 {name=p9 lab=Vc}
 C {ipin.sym} -120 -80 0 0 {name=p11 lab=Vbn}
-C {code_shown.sym} -440 -50 0 0 {name=SPICE only_toplevel=false value="
-.param cbc_wid=3 cbc_len=1.5 n=10 m=10
-"}

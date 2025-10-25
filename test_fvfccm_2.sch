@@ -32,12 +32,13 @@ N -140 -140 -100 -140 {lab=#net1}
 N 25 -70 40 -70 {lab=Vout}
 N 0 -70 15 -70 {lab=#net2}
 N -240 -110 -100 -110 {lab=#net3}
+N 10 -110 150 -110 {lab=#net4}
 C {isource.sym} -140 -60 2 0 {name=Iin value=100n}
 C {madvlsi/gnd.sym} -140 -10 0 0 {name=l2 lab=GND}
 C {madvlsi/vsource.sym} -220 -220 0 0 {name=V2
 value=1.8}
 C {madvlsi/gnd.sym} -220 -190 0 0 {name=l4 lab=GND}
-C {code_shown.sym} -500 -240 0 0 {name=SPICE only_toplevel=false value=".dc Vout 0 1.8 0.02
+C {code_shown.sym} -500 -240 0 0 {name=SPICE only_toplevel=false value=".dc Vdd 0 1.8 0.02
 .save all"}
 C {madvlsi/gnd.sym} -60 -40 0 0 {name=l5 lab=GND}
 C {sky130_fd_pr/corner.sym} -450 -120 0 0 {name=CORNER only_toplevel=false corner=tt}
@@ -54,5 +55,10 @@ C {madvlsi/ammeter1.sym} 15 -70 3 0 {name=Viout}
 C {lab_pin.sym} 40 -70 2 0 {name=p3 sig_type=std_logic lab=Vout}
 C {lab_pin.sym} -140 -90 0 0 {name=p1 sig_type=std_logic lab=Vin}
 C {madvlsi/vsource.sym} -240 -80 0 0 {name=V4
-value=0.675}
-C {madvlsi/gnd.sym} -240 -50 0 0 {name=l9 lab=GND}
+value=0.5}
+C {madvlsi/gnd.sym} -240 -50 0 0 {name=l9 lab=GND
+value=0.5}
+C {madvlsi/vsource.sym} 120 -80 0 0 {name=V1
+value=0.7}
+C {madvlsi/gnd.sym} 120 -50 0 0 {name=l3 lab=GND
+value=0.5}

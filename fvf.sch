@@ -69,15 +69,12 @@ C {iopin.sym} 130 -80 0 0 {name=p17 lab=VN}
 C {lab_pin.sym} -120 140 3 0 {name=p2 sig_type=std_logic lab=VN}
 C {opin.sym} 130 -50 0 0 {name=p18 lab=Vdsg}
 C {lab_pin.sym} 140 90 2 0 {name=p6 sig_type=std_logic lab=Vdsg}
-C {code_shown.sym} 40 10 0 0 {name=SPICE only_toplevel=false value="
-.param fvf_wid=3 fvf_len=1.5
-"}
 C {madvlsi/pmos3.sym} -120 -150 0 0 {name=M1
 L=\{fvf_len\}
 W=\{fvf_wid\}
 body=VP
 nf=1
-mult=1
+mult=1/40
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 

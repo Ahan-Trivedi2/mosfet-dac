@@ -5,30 +5,27 @@ V {}
 S {}
 F {}
 E {}
-N -10 150 70 150 {lab=#net1}
-N 70 150 140 150 {lab=#net1}
-N 170 180 170 210 {lab=VN}
-N 170 100 170 120 {lab=#net2}
-N 140 100 170 100 {lab=#net2}
-N 250 -90 280 -90 {lab=#net2}
-N 310 -60 310 -30 {lab=#net3}
-N 100 20 100 40 {lab=#net4}
-N 100 -30 100 20 {lab=#net4}
+N -10 230 70 230 {lab=#net1}
+N 70 230 140 230 {lab=#net1}
+N 170 260 170 290 {lab=VN}
+N 170 180 170 200 {lab=#net2}
+N 250 -90 280 -90 {lab=#net3}
+N 310 -60 310 -30 {lab=#net4}
+N 100 20 100 40 {lab=#net2}
 N -40 -140 -40 -90 {lab=VP}
 N 220 -140 220 -120 {lab=VP}
 N 310 -140 310 -120 {lab=VP}
 N 100 -130 100 -90 {lab=VP}
 N 100 -140 100 -130 {lab=VP}
 N 310 30 310 50 {lab=Iout}
-N -60 210 170 210 {lab=VN}
+N -60 290 170 290 {lab=VN}
 N -350 -130 -310 -130 {lab=VP}
 N -350 -90 -310 -90 {lab=Vbp}
 N -350 -50 -310 -50 {lab=Vcn}
 N -350 -10 -310 -10 {lab=Iin}
 N -350 30 -310 30 {lab=VN}
 N -350 70 -310 70 {lab=Iout}
-N 100 100 140 100 {lab=#net2}
-N 170 100 220 100 {lab=#net2}
+N 170 100 220 100 {lab=#net5}
 N -40 -140 310 -140 {lab=VP}
 N -40 -90 -40 -30 {lab=VP}
 N -40 100 -40 210 {lab=VN}
@@ -39,19 +36,22 @@ N -170 50 -170 70 {lab=Iin}
 N -170 50 -80 50 {lab=Iin}
 N -30 70 -10 70 {lab=#net1}
 N -10 70 -10 150 {lab=#net1}
-N 220 -40 260 -40 {lab=#net2}
-N 260 -90 260 -40 {lab=#net2}
-N 220 60 220 100 {lab=#net2}
-N 220 -40 220 0 {lab=#net2}
-N 220 -60 220 -40 {lab=#net2}
-N 220 0 220 60 {lab=#net2}
-N 70 30 70 70 {lab=#net4}
-N 70 30 100 30 {lab=#net4}
+N 220 -40 260 -40 {lab=#net3}
+N 260 -90 260 -40 {lab=#net3}
+N 220 60 220 100 {lab=#net5}
+N 220 -40 220 0 {lab=#net3}
+N 220 -60 220 -40 {lab=#net3}
 N -350 110 -310 110 {lab=Vcp}
-C {code_shown.sym} 400 -140 0 0 {name=SPICE only_toplevel=false value="
-.param ccm_wid=3 ccm_len=1.5
-"}
-C {madvlsi/nmos3.sym} 170 150 0 0 {name=M4
+N 220 30 220 60 {lab=#net5}
+N 220 0 220 20 {lab=#net3}
+N 100 -30 100 10 {lab=#net6}
+N -10 150 -10 230 {lab=#net1}
+N -60 210 -40 210 {lab=VN}
+N -40 210 -40 290 {lab=VN}
+N 170 100 170 120 {lab=#net5}
+N 100 40 100 190 {lab=#net2}
+N 100 190 170 190 {lab=#net2}
+C {madvlsi/nmos3.sym} 170 230 0 0 {name=M4
 L=\{ccm_len\}
 W=\{ccm_wid\}
 body=VN
@@ -111,27 +111,12 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {madvlsi/nmos3.sym} 100 70 0 0 {name=M8
-L=\{ccm_len\}
-W=\{ccm_wid\}
-body=VN
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
 C {madvlsi/pmos3.sym} 100 -60 0 0 {name=M9
 L=\{ccm_len\}
 W=\{ccm_wid\}
 body=VP
 nf=1
-mult=1
+mult=1/40
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -164,3 +149,21 @@ C {lab_pin.sym} 70 -60 0 0 {name=p20 sig_type=std_logic lab=Vbp}
 C {lab_pin.sym} -170 30 0 0 {name=p6 sig_type=std_logic lab=Vcn}
 C {lab_pin.sym} -350 110 0 0 {name=p21 sig_type=std_logic lab=Vcp}
 C {ipin.sym} -310 110 2 0 {name=p22 lab=Vcp}
+C {madvlsi/ammeter1.sym} 220 20 0 0 {name=Vmirror}
+C {madvlsi/ammeter1.sym} 100 10 0 0 {name=Vibias}
+C {madvlsi/nmos3.sym} 170 150 0 0 {name=M1
+L=\{ccm_len\}
+W=\{ccm_wid\}
+body=VN
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {lab_pin.sym} 140 150 0 0 {name=p23 sig_type=std_logic lab=Vcn}

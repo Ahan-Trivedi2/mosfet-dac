@@ -6,8 +6,31 @@ S {}
 F {}
 E {}
 B 2 -60 120 740 520 {flags=graph
-y1=-7.8e-13
-y2=2.8e-07
+y1=-5.1e-13
+y2=6.5e-08
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=1.3877788e-17
+x2=1.8
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+dataset=-1
+unitx=1
+logx=0
+logy=0
+color="8 5 7"
+node="i(viout)
+i(v.x5.viin)
+i(v.x5.visense)"
+rawfile=$netlist_dir/test_dac_vdd.raw}
+B 2 -60 520 740 920 {flags=graph
+y1=-2.4e-18
+y2=1.2
 ypos1=0
 ypos2=2
 divy=5
@@ -23,8 +46,11 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color=8
-node=i(viout)
+color="8 7 6 4"
+node="vg
+x5.isense
+x5.vcn
+x5.vcp"
 rawfile=$netlist_dir/test_dac_vdd.raw}
 N 930 -110 940 -110 {lab=Vout}
 N 920 -110 930 -110 {lab=Vout}
@@ -36,7 +62,7 @@ C {madvlsi/gnd.sym} 180 50 0 0 {name=l2 lab=GND}
 C {sky130_fd_pr/corner.sym} 20 -10 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {madvlsi/vdd.sym} 180 -10 0 0 {name=l5 lab=VDD}
 C {madvlsi/resistor.sym} 640 10 0 0 {name=R1
-value=200k
+value=100k
 m=1}
 C {madvlsi/gnd.sym} 640 40 0 0 {name=l10 lab=GND}
 C {madvlsi/vsource.sym} 930 -80 0 0 {name=Vout
@@ -115,4 +141,10 @@ C {lab_pin.sym} 580 -50 0 0 {name=p9 sig_type=std_logic lab=sb6}
 C {code_shown.sym} 250 20 0 0 {name=SPICE2 only_toplevel=false value="
 .dc Vdd 0 1.8 0.02
 .save all
+"}
+C {code_shown.sym} 770 90 0 0 {name=SPICE1 only_toplevel=false value="
+.param bbg_wid=1 bbg_len=3 a=2
+.param cbc_wid=1 cbc_len=3 n=10 m=10
+.param fvf_wid=1 fvf_len=3
+.param ccm_wid=1 ccm_len=3
 "}
