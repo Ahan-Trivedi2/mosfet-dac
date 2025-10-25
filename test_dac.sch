@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=1e-07
+x1=-9.9553461e-08
+x2=4.4653908e-10
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -37,8 +37,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=1e-07
+x1=-9.9553461e-08
+x2=4.4653908e-10
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -57,7 +57,7 @@ N 880 -110 900 -110 {lab=#net1}
 C {madvlsi/vsource.sym} 180 20 0 0 {name=V2
 value=1.8}
 C {madvlsi/gnd.sym} 180 50 0 0 {name=l2 lab=GND}
-C {sky130_fd_pr/corner.sym} 20 -10 0 0 {name=CORNER only_toplevel=false corner=tt}
+C {sky130_fd_pr/corner.sym} 20 -10 0 0 {name=CORNER only_toplevel=false corner=tt_mm}
 C {madvlsi/vdd.sym} 180 -10 0 0 {name=l5 lab=VDD}
 C {madvlsi/resistor.sym} 640 10 0 0 {name=R1
 value=100k
@@ -82,60 +82,66 @@ C {devices/code.sym} 240 -20 0 0 {name=SPICE1 only_toplevel=false value="
 .control
   set wr_vecnames
   set wr_singlescale
-  let code = 0
-  while code < 128
-    if code eq 0
-      let b0 = 0
-    else
-      let b0 = code % 2
+  let mc_runs = 10
+  let run = 1
+  dowhile run <= mc_runs
+    let code = 0
+    while code < 128
+      if code eq 0
+        let b0 = 0
+      else
+        let b0 = code % 2
+      end
+      if floor(code / 2) eq 0
+        let b1 = 0
+      else
+        let b1 = floor(code / 2) % 2
+      end
+      if floor(code / 4) eq 0
+        let b2 = 0
+      else
+        let b2 = floor(code / 4) % 2
+      end
+      if floor(code / 8) eq 0
+        let b3 = 0
+      else
+        let b3 = floor(code / 8) % 2
+      end
+      if floor(code / 16) eq 0
+        let b4 = 0
+      else 
+        let b4 = floor(code / 16) % 2
+      end
+      if floor(code / 32) eq 0
+        let b5 = 0
+      else
+        let b5 = floor(code / 32) % 2
+      end
+      if floor(code / 64) eq 0
+        let b6 = 0
+      else
+        let b6 = floor(code / 64) % 2
+      end
+      alter vb0 $&b0
+      alter vb1 $&b1
+      alter vb2 $&b2
+      alter vb3 $&b3
+      alter vb4 $&b4
+      alter vb5 $&b5
+      alter vb6 $&b6
+      save all
+      op
+      wrdata ~/Documents/mosfet-dac/test_dac\{$&run\}.txt code v(sb0) v(sb1) v(sb2) v(sb3) v(sb4) v(sb5) v(sb6) i(Viout) v(Vout)
+      if code eq 0
+        set appendwrite
+        set wr_vecnames = FALSE
+      end
+      let code = code + 1
     end
-    if floor(code / 2) eq 0
-      let b1 = 0
-    else
-      let b1 = floor(code / 2) % 2
-    end
-    if floor(code / 4) eq 0
-      let b2 = 0
-    else
-      let b2 = floor(code / 4) % 2
-    end
-    if floor(code / 8) eq 0
-      let b3 = 0
-    else
-      let b3 = floor(code / 8) % 2
-    end
-    if floor(code / 16) eq 0
-      let b4 = 0
-    else 
-      let b4 = floor(code / 16) % 2
-    end
-    if floor(code / 32) eq 0
-      let b5 = 0
-    else
-      let b5 = floor(code / 32) % 2
-    end
-    if floor(code / 64) eq 0
-      let b6 = 0
-    else
-      let b6 = floor(code / 64) % 2
-    end
-    alter vb0 $&b0
-    alter vb1 $&b1
-    alter vb2 $&b2
-    alter vb3 $&b3
-    alter vb4 $&b4
-    alter vb5 $&b5
-    alter vb6 $&b6
-    save all
-    op
-    wrdata ~/Documents/mosfet-dac/test_dac.txt code v(sb0) v(sb1) v(sb2) v(sb3) v(sb4) v(sb5) v(sb6) i(Viout) v(Vout)
-    if code eq 0
-      set appendwrite
-      set wr_vecnames = FALSE
-    end
-    let code = code + 1
+    reset
+    let run = run + 1
   end
-  quit
+quit
 .endc"}
 C {madvlsi/depvsrc.sym} -30 -300 0 1 {name=B0
 func=v(Vg)*v(b0)}

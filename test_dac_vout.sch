@@ -6,8 +6,8 @@ S {}
 F {}
 E {}
 B 2 -60 120 740 520 {flags=graph
-y1=9.4e-09
-y2=1.9e-08
+y1=2.8e-08
+y2=1.5e-07
 ypos1=0
 ypos2=2
 divy=5
@@ -116,9 +116,10 @@ C {code_shown.sym} 250 20 0 0 {name=SPICE2 only_toplevel=false value="
 .dc Vout 0 1.8 0.02
 .save all
 "}
-C {code_shown.sym} 770 90 0 0 {name=SPICE1 only_toplevel=false value="
-.param bbg_wid=1 bbg_len=3 a=2
-.param cbc_wid=1 cbc_len=3 n=10 m=10
-.param fvf_wid=1 fvf_len=3
-.param ccm_wid=1 ccm_len=3
+C {code_shown.sym} 780 50 0 0 {name=SPICE1 only_toplevel=false value="
+.param bbg_wid=1 bbg_len=5 a=2
+.param cbc_wid=1 cbc_len=5 n=10 m=10
+.param fvf_wid=1 fvf_len=5
+.param ccm_wid=1 ccm_len=5 ib=1/20
+.param dac_wid=0.75 dac_len=10
 "}

@@ -6,14 +6,14 @@ S {}
 F {}
 E {}
 B 2 -60 120 740 520 {flags=graph
-y1=-8.3e-13
-y2=1e-10
+y1=-1.1e-12
+y2=1.6e-07
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.3877788e-17
+x1=0
 x2=1.8
 divx=5
 subdivx=1
