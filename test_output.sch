@@ -33,8 +33,8 @@ logx=0
 logy=0
 }
 B 2 550 130 1350 530 {flags=graph
-y1=-8.1e-11
-y2=3.1e-07
+y1=-1.3e-10
+y2=1e-07
 ypos1=0
 ypos2=2
 divy=5
@@ -120,7 +120,7 @@ C {lab_pin.sym} 370 -50 1 0 {name=p20 sig_type=std_logic lab=Vcn}
 C {madvlsi/ammeter1.sym} 140 -40 3 0 {name=Visense}
 C {madvlsi/ammeter1.sym} 140 -10 3 0 {name=Vidump}
 C {madvlsi/resistor.sym} 130 -150 0 0 {name=R2
-value=100k
+value=50k
 m=1}
 C {madvlsi/gnd.sym} 130 -120 0 0 {name=l12 lab=GND}
 C {isource.sym} 140 20 2 0 {name=Iin1 value=100n}
@@ -135,12 +135,6 @@ C {madvlsi/vdd.sym} 300 -300 0 0 {name=l10 lab=VDD}
 C {madvlsi/vdd.sym} 490 -300 0 0 {name=l14 lab=VDD}
 C {madvlsi/vdd.sym} 490 -110 0 0 {name=l15 lab=VDD}
 C {madvlsi/vdd.sym} 300 -110 0 0 {name=l16 lab=VDD}
-C {code_shown.sym} 660 -40 0 0 {name=SPICE1 only_toplevel=false value="
-.param bbg_wid=1 bbg_len=3 a=2
-.param cbc_wid=1 cbc_len=3 n=10 m=10
-.param fvf_wid=1 fvf_len=3
-.param ccm_wid=1 ccm_len=3
-"}
 C {bbg.sym} 120 -420 0 0 {name=X1}
 C {madvlsi/resistor.sym} 130 -390 0 0 {name=R1
 value=4000k
@@ -150,3 +144,12 @@ C {madvlsi/vdd.sym} 160 -520 0 0 {name=l18 lab=VDD}
 C {madvlsi/gnd.sym} 130 -360 0 0 {name=l19 lab=GND}
 C {lab_pin.sym} 200 -490 2 0 {name=p4 sig_type=std_logic lab=Vcp2}
 C {lab_pin.sym} 200 -450 2 0 {name=p6 sig_type=std_logic lab=Vcn2}
+C {code_shown.sym} 670 -50 0 0 {name=SPICE1 only_toplevel=false value="
+.param bpmos_wid=1 bpmos_len=1
+.param bnmos_wid=1 bnmos_len=1
+.param a=2 n=10 m=10
+.param iccm=4 ibccm=1/10
+.param pcbc_wid=2 pcbc_len=5
+.param ncbc_wid=2 ncbc_len=5
+.param dac_wid=0.5 dac_len=10
+"}

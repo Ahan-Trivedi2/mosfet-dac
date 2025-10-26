@@ -60,7 +60,7 @@ C {madvlsi/gnd.sym} 180 50 0 0 {name=l2 lab=GND}
 C {sky130_fd_pr/corner.sym} 20 -10 0 0 {name=CORNER only_toplevel=false corner=tt_mm}
 C {madvlsi/vdd.sym} 180 -10 0 0 {name=l5 lab=VDD}
 C {madvlsi/resistor.sym} 640 10 0 0 {name=R1
-value=100k
+value=50k
 m=1}
 C {madvlsi/gnd.sym} 640 40 0 0 {name=l10 lab=GND}
 C {madvlsi/vsource.sym} 930 -80 0 0 {name=Vout
@@ -80,11 +80,12 @@ C {madvlsi/gnd.sym} 370 -270 0 1 {name=l34 lab=GND}
 C {madvlsi/gnd.sym} 450 -270 0 1 {name=l35 lab=GND}
 C {devices/code.sym} 240 -20 0 0 {name=SPICE1 only_toplevel=false value="
 .control
-  set wr_vecnames
-  set wr_singlescale
-  let mc_runs = 10
+  let mc_runs = 2
   let run = 1
   dowhile run <= mc_runs
+    set wr_vecnames
+    set appendwrite = FALSE
+    set wr_singlescale
     let code = 0
     while code < 128
       if code eq 0
@@ -201,10 +202,13 @@ C {lab_pin.sym} 580 -110 0 0 {name=p6 sig_type=std_logic lab=sb3}
 C {lab_pin.sym} 580 -90 0 0 {name=p7 sig_type=std_logic lab=sb4}
 C {lab_pin.sym} 580 -70 0 0 {name=p8 sig_type=std_logic lab=sb5}
 C {lab_pin.sym} 580 -50 0 0 {name=p9 sig_type=std_logic lab=sb6}
-C {code_shown.sym} 1000 -20 0 0 {name=SPICE2 only_toplevel=false value="
-.param bbg_wid=1 bbg_len=5 a=2
-.param cbc_wid=1 cbc_len=5 n=10 m=10
-.param fvf_wid=1 fvf_len=5
-.param ccm_wid=1 ccm_len=5 ib=1/20
-.param dac_wid=0.75 dac_len=10
+C {code_shown.sym} 1060 -220 0 0 {name=SPICE2 only_toplevel=false value="
+.param bpmos_wid=1 bpmos_len=1
+.param bnmos_wid=1 bnmos_len=1
+.param mult_b=5 mult_c=5
+.param a=2 n=10 m=10
+.param iccm=10 ibccm=1
+.param pcbc_wid=2 pcbc_len=5
+.param ncbc_wid=2 ncbc_len=5
+.param dac_wid=0.5 dac_len=10
 "}

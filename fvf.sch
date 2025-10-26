@@ -22,11 +22,11 @@ N 80 -80 130 -80 {lab=VN}
 N 80 -50 130 -50 {lab=Vdsg}
 N -230 -30 -150 -30 {lab=Vc}
 C {madvlsi/nmos3.sym} -120 -30 0 0 {name=M3
-L=\{fvf_len\}
-W=\{fvf_wid\}
+L=\{ncbc_len\}
+W=\{ncbc_wid\}
 body=VN
 nf=1
-mult=1
+mult=\{mult_c\}
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -37,11 +37,11 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -120 90 2 0 {name=M4
-L=\{fvf_len\}
-W=\{fvf_wid\}
+L=\{ncbc_len\}
+W=\{ncbc_wid\}
 body=VN
 nf=1
-mult=1
+mult=\{mult_c\}
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -70,11 +70,11 @@ C {lab_pin.sym} -120 140 3 0 {name=p2 sig_type=std_logic lab=VN}
 C {opin.sym} 130 -50 0 0 {name=p18 lab=Vdsg}
 C {lab_pin.sym} 140 90 2 0 {name=p6 sig_type=std_logic lab=Vdsg}
 C {madvlsi/pmos3.sym} -120 -150 0 0 {name=M1
-L=\{fvf_len\}
-W=\{fvf_wid\}
+L=\{bpmos_len\}
+W=\{bpmos_wid\}
 body=VP
 nf=1
-mult=\{ib\}
+mult=\{ibccm\}*\{mult_b\}
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 

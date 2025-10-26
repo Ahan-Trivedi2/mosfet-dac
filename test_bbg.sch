@@ -6,8 +6,8 @@ S {}
 F {}
 E {}
 B 2 -630 70 170 470 {flags=graph
-y1=3.3e-25
-y2=2.3e-08
+y1=3.4e-24
+y2=6.6e-07
 ypos1=0
 ypos2=2
 divy=5
@@ -27,8 +27,8 @@ logx=0
 logy=0
 rawfile=$netlist_dir/test_bbg.raw}
 B 2 170 70 970 470 {flags=graph
-y1=-5.4e-20
-y2=0.88
+y1=-3e-20
+y2=0.92
 ypos1=0
 ypos2=2
 divy=5
@@ -60,7 +60,7 @@ N -40 -200 -40 -170 {lab=#net3}
 N -60 -170 -40 -170 {lab=#net3}
 N -40 -130 -40 -120 {lab=#net2}
 C {madvlsi/resistor.sym} -130 -30 0 0 {name=R1
-value=200k
+value=50k
 m=1}
 C {madvlsi/gnd.sym} -130 0 0 0 {name=l2 lab=GND}
 C {madvlsi/vsource.sym} -400 -240 0 0 {name=V1
@@ -68,16 +68,14 @@ value=1.8}
 C {madvlsi/vdd.sym} -400 -270 0 0 {name=l3 lab=VDD}
 C {madvlsi/gnd.sym} -400 -210 0 0 {name=l4 lab=GND}
 C {code_shown.sym} -320 -390 0 0 {name=SPICE only_toplevel=false value="
-.param bbg_wid=1 bbg_len=1.5 a=2
-.param bias_wid=1 bias_len=1.5
 .dc V1 0 1.8 0.05
 .save all"}
 C {sky130_fd_pr/corner.sym} -480 -120 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {madvlsi/gnd.sym} -100 -100 0 0 {name=l1 lab=GND}
 C {madvlsi/vdd.sym} -100 -200 0 0 {name=l5 lab=VDD}
 C {madvlsi/nmos3.sym} 0 -110 0 0 {name=M1
-L=\{bias_len\}
-W=\{bias_wid\}
+L=\{bnmos_len\}
+W=\{bnmos_wid\}
 body=GND
 nf=1
 mult=1
@@ -91,8 +89,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 0 -200 0 0 {name=M2
-L=\{bias_len\}
-W=\{bias_wid\}
+L=\{bpmos_len\}
+W=\{bpmos_wid\}
 body=VDD
 nf=1
 mult=1
@@ -109,3 +107,10 @@ C {madvlsi/vdd.sym} 0 -230 0 0 {name=l6 lab=VDD}
 C {madvlsi/gnd.sym} 0 -80 0 0 {name=l7 lab=GND}
 C {madvlsi/ammeter1.sym} 0 -160 0 0 {name=Vmeas}
 C {bbg.sym} -140 -100 0 0 {}
+C {code_shown.sym} 220 -150 0 0 {name=SPICE1 only_toplevel=false value="
+.param bpmos_wid=1 bpmos_len=1 a=2
+.param bnmos_wid=1 bnmos_len=1 n=10 m=10
+.param pcbc_wid=0.5 pcbc_len=5
+.param ncbc_wid=0.5 ncbc_len=5 ib=1/20
+.param dac_wid=0.5 dac_len=10
+"}

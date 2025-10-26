@@ -111,10 +111,10 @@ N -540 -610 -540 -580 {lab=#net5}
 N -540 -610 -510 -610 {lab=#net5}
 N -510 -550 -510 -540 {lab=#net6}
 N -510 -620 -510 -610 {lab=#net5}
-N -510 -610 -330 -610 {lab=#net5}
 N -330 -610 230 -420 {lab=#net5}
 N -540 -540 -540 -510 {lab=#net6}
 N -540 -540 -510 -540 {lab=#net6}
+N -510 -610 -330 -610 {lab=#net5}
 C {cbc.sym} 460 -270 0 0 {name=X2}
 C {bbg.sym} 330 -270 0 0 {name=X3}
 C {fvfccm.sym} 670 -260 0 0 {name=X4}
@@ -140,11 +140,11 @@ C {lab_pin.sym} -260 -240 1 1 {name=p23 sig_type=std_logic lab=sb5}
 C {lab_pin.sym} -340 -240 1 1 {name=p24 sig_type=std_logic lab=sb6}
 C {lab_pin.sym} 290 -100 3 0 {name=p25 sig_type=std_logic lab=Idump}
 C {madvlsi/pmos3.sym} -490 -370 0 0 {name=M1
-L=\{bias_len\}
-W=\{bias_wid\}
+L=\{bpmos_len\}
+W=\{bpmos_wid\}
 body=VP
 nf=1
-mult=1/3
+mult=\{mult_b\}/3
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -154,9 +154,6 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {code_shown.sym} -810 -280 0 0 {name=SPICE2 only_toplevel=false value="
-.param bias_wid=\{bbg_wid\} bias_len=\{bbg_len\}
-"}
 C {ncbc.sym} 460 -80 0 0 {name=X1}
 C {lab_pin.sym} 440 -420 0 0 {name=p26 sig_type=std_logic lab=Vbp}
 C {lab_pin.sym} 280 -400 2 0 {name=p2 sig_type=std_logic lab=VP}
@@ -213,11 +210,11 @@ C {madvlsi/vsource.sym} -620 -400 0 0 {name=V1
 value=1}
 C {madvlsi/gnd.sym} -620 -370 0 0 {name=l6 lab=GND}
 C {madvlsi/nmos3.sym} -510 -510 0 0 {name=M2
-L=\{bias_len\}
-W=\{bias_wid\}
+L=\{bpmos_len\}
+W=\{bpmos_wid\}
 body=VN
 nf=1
-mult=1
+mult=\{mult_b\}
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -229,11 +226,11 @@ spiceprefix=X
 }
 C {lab_pin.sym} -510 -480 3 0 {name=p57 sig_type=std_logic lab=VN}
 C {madvlsi/pmos3.sym} -510 -650 0 0 {name=M3
-L=\{bias_len\}*3
-W=\{bias_wid\}/3
+L=\{bpmos_len\}*3
+W=\{bpmos_wid\}/3
 body=VP
 nf=1
-mult=1
+mult=\{mult_b\}
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -244,11 +241,11 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -510 -580 0 0 {name=M4
-L=\{bias_len\}
-W=\{bias_wid\}
+L=\{bpmos_len\}
+W=\{bpmos_wid\}
 body=VN
 nf=1
-mult=1
+mult=\{mult_b\}
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 

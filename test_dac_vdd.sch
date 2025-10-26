@@ -6,8 +6,8 @@ S {}
 F {}
 E {}
 B 2 -60 120 740 520 {flags=graph
-y1=-1.1e-12
-y2=1.6e-07
+y1=-6.2e-13
+y2=5.1e-07
 ypos1=0
 ypos2=2
 divy=5
@@ -23,14 +23,15 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="8 5 7"
+color="8 5 7 4"
 node="i(viout)
 i(v.x5.viin)
-i(v.x5.visense)"
+i(v.x5.visense)
+i(v.x5.x4.vibias)"
 rawfile=$netlist_dir/test_dac_vdd.raw}
 B 2 -60 520 740 920 {flags=graph
-y1=-2.4e-18
-y2=1.2
+y1=-1.1e-18
+y2=1.7
 ypos1=0
 ypos2=2
 divy=5
@@ -62,7 +63,7 @@ C {madvlsi/gnd.sym} 180 50 0 0 {name=l2 lab=GND}
 C {sky130_fd_pr/corner.sym} 20 -10 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {madvlsi/vdd.sym} 180 -10 0 0 {name=l5 lab=VDD}
 C {madvlsi/resistor.sym} 640 10 0 0 {name=R1
-value=100k
+value=50k
 m=1}
 C {madvlsi/gnd.sym} 640 40 0 0 {name=l10 lab=GND}
 C {madvlsi/vsource.sym} 930 -80 0 0 {name=Vout
@@ -142,10 +143,13 @@ C {code_shown.sym} 250 20 0 0 {name=SPICE2 only_toplevel=false value="
 .dc Vdd 0 1.8 0.02
 .save all
 "}
-C {code_shown.sym} 770 90 0 0 {name=SPICE1 only_toplevel=false value="
-.param bbg_wid=1 bbg_len=5 a=2
-.param cbc_wid=1 cbc_len=5 n=10 m=10
-.param fvf_wid=1 fvf_len=5
-.param ccm_wid=1 ccm_len=5 ib=1/20
-.param dac_wid=0.75 dac_len=10
+C {code_shown.sym} 760 80 0 0 {name=SPICE1 only_toplevel=false value="
+.param bpmos_wid=1 bpmos_len=1
+.param bnmos_wid=1 bnmos_len=1
+.param mult_b=5 mult_c=5
+.param a=2 n=10 m=10
+.param iccm=10 ibccm=1
+.param pcbc_wid=2 pcbc_len=5
+.param ncbc_wid=2 ncbc_len=5
+.param dac_wid=0.5 dac_len=10
 "}

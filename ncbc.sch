@@ -36,11 +36,11 @@ N 180 -280 220 -280 {lab=VP}
 N 180 -250 220 -250 {lab=Vbp}
 N 70 -110 110 -110 {lab=Vdssat}
 C {madvlsi/nmos3.sym} 70 -60 2 1 {name=M10
-L=\{cbc_len\}
-W=\{cbc_wid\}
+L=\{ncbc_len\}
+W=\{ncbc_wid\}
 body=VN
 nf=1
-mult=1
+mult=\{mult_c\}
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -52,11 +52,11 @@ spiceprefix=X
 }
 C {lab_pin.sym} 20 -250 2 1 {name=p5 sig_type=std_logic lab=Vbp}
 C {madvlsi/pmos3.sym} 70 -250 2 1 {name=M11
-L=\{cbc_len\}*\{n\}
-W=\{cbc_wid\}
+L=\{bpmos_len\}*\{n\}
+W=\{bpmos_wid\}
 body=VP
 nf=1
-mult=1
+mult=\{iccm\}*\{mult_b\}
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -88,11 +88,11 @@ C {iopin.sym} -120 -140 2 0 {name=p8 lab=VN}
 C {opin.sym} -120 -110 2 0 {name=p9 lab=Vc}
 C {ipin.sym} -120 -80 0 0 {name=p11 lab=Vbp}
 C {madvlsi/pmos3.sym} 250 -250 2 1 {name=M1
-L=\{cbc_len\}
-W=\{cbc_wid\}
+L=\{bpmos_len\}
+W=\{bpmos_wid\}
 body=VP
 nf=1
-mult=1
+mult=\{iccm\}*\{mult_b\}
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -103,11 +103,11 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 70 -170 2 1 {name=M2
-L=\{cbc_len\}
-W=\{cbc_wid\}*\{m\}
+L=\{bpmos_len\}
+W=\{bpmos_wid\}*\{m\}
 body=VN
 nf=1
-mult=1
+mult=\{iccm\}*\{mult_b\}
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -118,11 +118,11 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 250 -150 0 1 {name=M3
-L=\{cbc_len\}
-W=\{cbc_wid\}
+L=\{ncbc_len\}
+W=\{ncbc_wid\}
 body=VN
 nf=1
-mult=1
+mult=\{mult_c\}
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
