@@ -22,7 +22,7 @@ L=\{inv_len\}
 W=\{inv_wid\}
 body=VP
 nf=1
-mult=1
+mult=\{mult_inv\}
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -37,7 +37,7 @@ L=\{inv_len\}
 W=\{inv_wid\}
 body=VN
 nf=1
-mult=1
+mult=\{mult_inv\}
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -59,6 +59,3 @@ C {lab_pin.sym} 80 -230 0 0 {name=p2 sig_type=std_logic lab=VP}
 C {lab_pin.sym} 80 -50 3 0 {name=p13 sig_type=std_logic lab=VN}
 C {lab_pin.sym} -20 -140 0 0 {name=p14 sig_type=std_logic lab=A}
 C {lab_pin.sym} 150 -140 2 0 {name=p1 sig_type=std_logic lab=Y}
-C {code_shown.sym} -70 -300 0 0 {name=SPICE2 only_toplevel=false value="
-.param inv_wid=1 inv_len=0.15
-"}

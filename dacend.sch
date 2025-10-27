@@ -12,6 +12,9 @@ N -210 -90 -170 -90 {lab=VN}
 N -210 30 -180 30 {lab=Idump}
 N -210 -50 -170 -50 {lab=Iin}
 N -210 -10 -170 -10 {lab=Vgate}
+N 0 -0 40 0 {lab=Idump}
+N 0 -60 40 -60 {lab=Iin}
+N -30 -30 10 -30 {lab=Vgate}
 C {lab_pin.sym} -50 -30 0 0 {name=p1 sig_type=std_logic lab=Vgate}
 C {lab_pin.sym} 0 20 2 0 {name=p9 sig_type=std_logic lab=Idump}
 C {lab_pin.sym} 0 -80 1 0 {name=p12 sig_type=std_logic lab=Iin}
@@ -28,7 +31,7 @@ L=\{dac_len\}
 W=\{dac_wid\}
 body=VN
 nf=1
-mult=1
+mult=\{mult_dac\}
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
