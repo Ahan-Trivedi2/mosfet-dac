@@ -210,6 +210,6 @@ C {code_shown.sym} 1020 -170 0 0 {name=SPICE2 only_toplevel=false value="
 .param iccm=10 ibccm=1
 .param pcbc_wid=2 pcbc_len=5
 .param ncbc_wid=2 ncbc_len=5
-.param dac_wid=0.75 dac_len=5 mult_dac=0.5
+.param dac_wid=0.5 dac_len=5 mult_dac=0.33
 .param inv_wid=2 inv_len=0.5 mult_inv=2
 "}
