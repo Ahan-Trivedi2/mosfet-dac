@@ -50,7 +50,6 @@ N -60 210 -40 210 {lab=VN}
 N -40 210 -40 290 {lab=VN}
 N 170 100 170 120 {lab=#net5}
 N 100 40 100 190 {lab=#net2}
-N 100 190 170 190 {lab=#net2}
 C {madvlsi/nmos3.sym} 170 230 0 0 {name=M4
 L=\{ncbc_len\}
 W=\{ncbc_wid\}
