@@ -119,14 +119,11 @@ N 400 -350 560 -350 {lab=Vg}
 N 560 -350 590 -350 {lab=Vg}
 N 590 -350 750 -350 {lab=Vg}
 N 750 -350 840 -350 {lab=Vg}
-N -590 300 -590 630 {lab=b6}
 N -590 300 -550 300 {lab=b6}
-N -370 300 -370 630 {lab=b5}
 N -370 300 -360 300 {lab=b5}
 N -380 300 -380 630 {lab=bn6}
 N -390 300 -380 300 {lab=bn6}
 N -380 630 -380 670 {lab=bn6}
-N -180 300 -180 630 {lab=b4}
 N -180 300 -170 300 {lab=b4}
 N -190 300 -190 630 {lab=bn5}
 N -200 300 -190 300 {lab=bn5}
@@ -151,7 +148,6 @@ N 580 300 590 300 {lab=b0}
 N 570 300 570 630 {lab=bn1}
 N 560 300 570 300 {lab=bn1}
 N 570 630 570 670 {lab=bn1}
-N 770 300 770 630 {lab=bn0}
 N 750 300 770 300 {lab=bn0}
 N -580 370 -580 440 {lab=Iout}
 N -520 440 -330 440 {lab=Iout}
@@ -183,7 +179,6 @@ N 690 370 690 520 {lab=Idump}
 N 730 520 970 520 {lab=Idump}
 N -630 -350 -550 -350 {lab=Vg}
 N -640 -430 -520 -430 {lab=Iin}
-N 770 630 770 670 {lab=bn0}
 N 810 -80 810 320 {lab=Idump}
 N -520 -500 -420 -500 {lab=VN}
 N -330 -500 -230 -500 {lab=VN}
@@ -707,9 +702,7 @@ N 680 -1480 720 -1480 {lab=Idump}
 N 680 -1600 680 -1480 {lab=Idump}
 N -580 -1560 800 -1560 {lab=Iout}
 N -460 -1600 800 -1600 {lab=Idump}
-N -640 -1400 -550 -1400 {lab=b6}
 N -370 -1720 -370 -1390 {lab=b5}
-N -640 -1730 -640 -1400 {lab=b6}
 N -180 -1720 -180 -1390 {lab=b4}
 N 10 -1710 10 -1380 {lab=b3}
 N 200 -1710 200 -1380 {lab=b2}
@@ -728,13 +721,10 @@ N -10 -1380 -0 -1380 {lab=bn4}
 N 180 -1380 190 -1380 {lab=bn3}
 N 370 -1380 380 -1380 {lab=bn2}
 N 560 -1380 570 -1380 {lab=bn1}
-N 750 -1380 760 -1380 {lab=bn0}
 N -190 -1750 -190 -1390 {lab=bn5}
 N 0 -1740 0 -1380 {lab=bn4}
 N 190 -1740 190 -1380 {lab=bn3}
 N 380 -1740 380 -1380 {lab=bn2}
-N 570 -1740 570 -1380 {lab=bn1}
-N 760 -1740 760 -1380 {lab=bn0}
 N -570 -660 -570 -430 {lab=Iin}
 N 840 -630 840 -470 {lab=VN}
 N -570 -660 -520 -660 {lab=Iin}
@@ -756,6 +746,98 @@ N 870 -80 900 -80 {lab=Iout}
 N 910 -590 910 -80 {lab=Iout}
 N 900 -80 910 -80 {lab=Iout}
 N 910 -620 910 -590 {lab=Iout}
+N 800 -1600 940 -1600 {lab=Idump}
+N 920 520 940 -1600 {lab=Idump}
+N -1160 -430 -640 -430 {lab=Iin}
+N -1160 -350 -630 -350 {lab=Vg}
+N -590 -1400 -590 300 {lab=b6}
+N -590 -1400 -550 -1400 {lab=b6}
+N -670 670 -380 670 {lab=bn6}
+N -720 670 -670 670 {lab=bn6}
+N -670 -1750 -380 -1750 {lab=bn6}
+N -720 -1750 -670 -1750 {lab=bn6}
+N -720 -1750 -720 670 {lab=bn6}
+N -670 -1720 -370 -1720 {lab=b5}
+N -670 -1720 -660 630 {lab=b5}
+N -440 620 -330 620 {lab=b5}
+N -660 630 -440 630 {lab=b5}
+N -440 620 -440 630 {lab=b5}
+N -190 -1790 -190 -1750 {lab=bn5}
+N -750 -1790 -190 -1790 {lab=bn5}
+N -750 -1790 -750 710 {lab=bn5}
+N -750 710 -190 710 {lab=bn5}
+N -190 670 -190 710 {lab=bn5}
+N -180 590 -160 590 {lab=b4}
+N -370 300 -370 620 {lab=b5}
+N -180 300 -180 590 {lab=b4}
+N -180 -1770 -180 -1720 {lab=b4}
+N -740 -1770 -180 -1770 {lab=b4}
+N -740 -1770 -740 690 {lab=b4}
+N -740 690 -160 690 {lab=b4}
+N -160 590 -160 690 {lab=b4}
+N 0 -1830 0 -1740 {lab=bn4}
+N -780 -1830 0 -1830 {lab=bn4}
+N -780 -1830 -780 750 {lab=bn4}
+N -780 750 -0 760 {lab=bn4}
+N 0 670 0 760 {lab=bn4}
+N 10 -1810 10 -1710 {lab=b3}
+N -760 -1810 10 -1810 {lab=b3}
+N -760 -1810 -760 730 {lab=b3}
+N -760 730 20 740 {lab=b3}
+N 20 630 20 740 {lab=b3}
+N 10 630 20 630 {lab=b3}
+N 770 300 950 300 {lab=bn0}
+N 750 -1380 770 -1380 {lab=bn0}
+N 770 -1380 950 -1380 {lab=bn0}
+N 950 -1380 950 300 {lab=bn0}
+N 570 -1730 980 -1730 {lab=bn1}
+N 570 690 1000 690 {lab=bn1}
+N 570 670 570 690 {lab=bn1}
+N 580 -1710 1010 -1710 {lab=b0}
+N 990 640 1010 -1710 {lab=b0}
+N 580 640 990 640 {lab=b0}
+N 580 630 580 640 {lab=b0}
+N 980 -1730 1020 -1730 {lab=bn1}
+N 1000 690 1020 -1730 {lab=bn1}
+N 570 -1730 570 -1380 {lab=bn1}
+N 380 -1780 380 -1740 {lab=bn2}
+N 380 -1780 1080 -1780 {lab=bn2}
+N 1070 730 1080 -1780 {lab=bn2}
+N 1070 730 1070 790 {lab=bn2}
+N 380 790 1070 790 {lab=bn2}
+N 380 670 380 790 {lab=bn2}
+N 390 -1770 390 -1710 {lab=b1}
+N 390 -1770 1040 -1770 {lab=b1}
+N 1020 750 1040 -1770 {lab=b1}
+N 390 760 1020 750 {lab=b1}
+N 390 630 390 760 {lab=b1}
+N 190 -1840 190 -1740 {lab=bn3}
+N 190 -1840 1120 -1840 {lab=bn3}
+N 1120 -1840 1120 840 {lab=bn3}
+N 190 670 190 820 {lab=bn3}
+N 190 820 190 840 {lab=bn3}
+N 190 840 1120 840 {lab=bn3}
+N 200 -1820 200 -1710 {lab=b2}
+N 200 -1820 1100 -1820 {lab=b2}
+N 1090 820 1100 -1820 {lab=b2}
+N 200 820 1090 820 {lab=b2}
+N 200 630 200 820 {lab=b2}
+N 970 440 1230 440 {lab=Iout}
+N 970 520 1230 520 {lab=Idump}
+N 950 300 1230 300 {lab=bn0}
+N -810 300 -590 300 {lab=b6}
+N 580 640 580 940 {lab=b0}
+N 570 690 570 860 {lab=bn1}
+N 380 790 380 860 {lab=bn2}
+N 390 760 390 940 {lab=b1}
+N 200 820 200 930 {lab=b2}
+N 20 740 20 920 {lab=b3}
+N 20 920 20 930 {lab=b3}
+N 0 760 -0 840 {lab=bn4}
+N -160 690 -160 930 {lab=b4}
+N -190 710 -190 840 {lab=bn5}
+N -330 620 -330 930 {lab=b5}
+N -380 670 -380 840 {lab=bn6}
 C {madvlsi/nmos3.sym} -420 -400 2 0 {name=M70
 L=5
 W=0.75
@@ -1626,24 +1708,24 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {ipin.sym} -630 -350 0 0 {name=p1 lab=Vg}
-C {ipin.sym} -640 -430 0 0 {name=p2 lab=Iin}
-C {opin.sym} 970 440 0 0 {name=p3 lab=Iout}
-C {opin.sym} 970 520 0 0 {name=p4 lab=Idump}
-C {ipin.sym} -590 630 3 0 {name=p5 lab=b6}
-C {ipin.sym} -370 630 3 0 {name=p6 lab=b5}
-C {ipin.sym} -180 630 3 0 {name=p7 lab=b4}
-C {ipin.sym} 10 630 3 0 {name=p8 lab=b3}
-C {ipin.sym} 200 630 3 0 {name=p9 lab=b2}
-C {ipin.sym} 390 630 3 0 {name=p10 lab=b1}
-C {ipin.sym} 580 630 3 0 {name=p11 lab=b0}
-C {ipin.sym} -380 670 3 0 {name=p12 lab=bn6}
-C {ipin.sym} -190 670 3 0 {name=p13 lab=bn5}
-C {ipin.sym} 0 670 3 0 {name=p14 lab=bn4}
-C {ipin.sym} 190 670 3 0 {name=p15 lab=bn3}
-C {ipin.sym} 380 670 3 0 {name=p16 lab=bn2}
-C {ipin.sym} 570 670 3 0 {name=p17 lab=bn1}
-C {ipin.sym} 770 670 3 0 {name=p18 lab=bn0}
+C {ipin.sym} -1160 -350 0 0 {name=p1 lab=Vg}
+C {ipin.sym} -1160 -430 0 0 {name=p2 lab=Iin}
+C {opin.sym} 1230 440 0 0 {name=p3 lab=Iout}
+C {opin.sym} 1230 520 0 0 {name=p4 lab=Idump}
+C {ipin.sym} -810 300 0 0 {name=p5 lab=b6}
+C {ipin.sym} -330 930 3 0 {name=p6 lab=b5}
+C {ipin.sym} -160 930 3 0 {name=p7 lab=b4}
+C {ipin.sym} 20 930 3 0 {name=p8 lab=b3}
+C {ipin.sym} 200 930 3 0 {name=p9 lab=b2}
+C {ipin.sym} 390 940 3 0 {name=p10 lab=b1}
+C {ipin.sym} 580 940 3 0 {name=p11 lab=b0}
+C {ipin.sym} -380 840 3 0 {name=p12 lab=bn6}
+C {ipin.sym} -190 840 3 0 {name=p13 lab=bn5}
+C {ipin.sym} 0 840 3 0 {name=p14 lab=bn4}
+C {ipin.sym} 190 840 3 0 {name=p15 lab=bn3}
+C {ipin.sym} 380 860 3 0 {name=p16 lab=bn2}
+C {ipin.sym} 570 860 3 0 {name=p17 lab=bn1}
+C {ipin.sym} 1230 300 2 0 {name=p18 lab=bn0}
 C {madvlsi/nmos3.sym} -420 -470 2 0 {name=M1
 L=5
 W=0.75
@@ -5155,18 +5237,3 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {opin.sym} 800 -1600 0 0 {name=p26 lab=Idump}
-C {ipin.sym} -640 -1730 1 0 {name=p27 lab=b6}
-C {ipin.sym} -380 -1750 1 0 {name=p28 lab=bn6}
-C {ipin.sym} -370 -1720 1 0 {name=p29 lab=b5}
-C {ipin.sym} -190 -1750 1 0 {name=p30 lab=bn5}
-C {ipin.sym} -180 -1720 1 0 {name=p31 lab=b4}
-C {ipin.sym} 0 -1740 1 0 {name=p32 lab=bn4}
-C {ipin.sym} 10 -1710 1 0 {name=p33 lab=b3}
-C {ipin.sym} 190 -1740 1 0 {name=p34 lab=bn3}
-C {ipin.sym} 200 -1710 1 0 {name=p35 lab=b2}
-C {ipin.sym} 380 -1740 1 0 {name=p36 lab=bn2}
-C {ipin.sym} 390 -1710 1 0 {name=p37 lab=b1}
-C {ipin.sym} 570 -1740 1 0 {name=p38 lab=bn1}
-C {ipin.sym} 580 -1710 1 0 {name=p39 lab=b0}
-C {ipin.sym} 760 -1740 1 0 {name=p40 lab=bn0}
