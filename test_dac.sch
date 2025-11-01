@@ -80,8 +80,8 @@ C {madvlsi/gnd.sym} 370 -270 0 1 {name=l34 lab=GND}
 C {madvlsi/gnd.sym} 450 -270 0 1 {name=l35 lab=GND}
 C {devices/code.sym} 240 -20 0 0 {name=SPICE1 only_toplevel=false value="
 .control
-  let mc_runs = 10
-  let run = 1
+  let mc_runs = 5
+  let run = 5
   dowhile run <= mc_runs
     set wr_vecnames
     set appendwrite = FALSE
