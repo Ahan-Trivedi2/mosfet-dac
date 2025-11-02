@@ -703,7 +703,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -450 1090 0 0 {name=M37
-L=1
+L=10
 W=1
 body=VP
 nf=1
@@ -718,7 +718,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -450 1190 0 0 {name=M38
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -733,7 +733,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -360 1190 0 0 {name=M39
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -748,7 +748,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -270 1190 0 0 {name=M40
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -763,7 +763,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -180 1190 0 0 {name=M41
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -778,7 +778,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -90 1190 0 0 {name=M42
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -793,7 +793,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -360 1090 0 0 {name=M43
-L=1
+L=10
 W=1
 body=VP
 nf=1
@@ -808,7 +808,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -270 1090 0 0 {name=M44
-L=1
+L=10
 W=1
 body=VP
 nf=1
@@ -823,7 +823,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -180 1090 0 0 {name=M45
-L=1
+L=10
 W=1
 body=VP
 nf=1
@@ -838,7 +838,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -90 1090 0 0 {name=M46
-L=1
+L=10
 W=1
 body=VP
 nf=1
@@ -959,7 +959,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -450 1250 0 0 {name=M78
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -974,7 +974,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -360 1250 0 0 {name=M79
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -989,7 +989,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -270 1250 0 0 {name=M80
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -1004,7 +1004,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -180 1250 0 0 {name=M81
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -1019,7 +1019,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -90 1250 0 0 {name=M82
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -1364,7 +1364,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 0 1090 0 0 {name=M52
-L=1
+L=10
 W=1
 body=VP
 nf=1
@@ -1379,7 +1379,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 0 1190 0 0 {name=M53
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -1394,7 +1394,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 90 1190 0 0 {name=M54
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -1409,7 +1409,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 180 1190 0 0 {name=M55
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -1424,7 +1424,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 270 1190 0 0 {name=M56
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -1439,7 +1439,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 360 1190 0 0 {name=M57
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -1454,7 +1454,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 90 1090 0 0 {name=M58
-L=1
+L=10
 W=1
 body=VP
 nf=1
@@ -1469,7 +1469,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 180 1090 0 0 {name=M60
-L=1
+L=10
 W=1
 body=VP
 nf=1
@@ -1484,7 +1484,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 270 1090 0 0 {name=M62
-L=1
+L=10
 W=1
 body=VP
 nf=1
@@ -1499,7 +1499,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 360 1090 0 0 {name=M63
-L=1
+L=10
 W=1
 body=VP
 nf=1
@@ -1589,7 +1589,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 0 1250 0 0 {name=M73
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -1604,7 +1604,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 90 1250 0 0 {name=M74
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -1619,7 +1619,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 180 1250 0 0 {name=M75
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -1634,7 +1634,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 270 1250 0 0 {name=M76
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -1649,7 +1649,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 360 1250 0 0 {name=M83
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -1994,7 +1994,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1280 1090 0 1 {name=M108
-L=1
+L=10
 W=1
 body=VP
 nf=1
@@ -2009,7 +2009,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1280 1190 0 1 {name=M109
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -2024,7 +2024,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1190 1190 0 1 {name=M110
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -2039,7 +2039,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1100 1190 0 1 {name=M111
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -2054,7 +2054,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1010 1190 0 1 {name=M112
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -2069,7 +2069,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 920 1190 0 1 {name=M113
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -2084,7 +2084,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1190 1090 0 1 {name=M114
-L=1
+L=10
 W=1
 body=VP
 nf=1
@@ -2099,7 +2099,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1100 1090 0 1 {name=M115
-L=1
+L=10
 W=1
 body=VP
 nf=1
@@ -2114,7 +2114,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1010 1090 0 1 {name=M116
-L=1
+L=10
 W=1
 body=VP
 nf=1
@@ -2129,7 +2129,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 920 1090 0 1 {name=M117
-L=1
+L=10
 W=1
 body=VP
 nf=1
@@ -2249,7 +2249,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1280 1250 0 1 {name=M125
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -2264,7 +2264,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1190 1250 0 1 {name=M126
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -2279,7 +2279,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1100 1250 0 1 {name=M127
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -2294,7 +2294,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 1010 1250 0 1 {name=M128
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -2309,7 +2309,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 920 1250 0 1 {name=M129
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -2654,7 +2654,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 830 1090 0 1 {name=M152
-L=1
+L=10
 W=1
 body=VP
 nf=1
@@ -2669,7 +2669,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 830 1190 0 1 {name=M153
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -2684,7 +2684,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 740 1190 0 1 {name=M154
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -2699,7 +2699,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 650 1190 0 1 {name=M155
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -2714,7 +2714,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 560 1190 0 1 {name=M156
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -2729,7 +2729,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 470 1190 0 1 {name=M157
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -2744,7 +2744,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 740 1090 0 1 {name=M158
-L=1
+L=10
 W=1
 body=VP
 nf=1
@@ -2759,7 +2759,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 650 1090 0 1 {name=M159
-L=1
+L=10
 W=1
 body=VP
 nf=1
@@ -2774,7 +2774,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 560 1090 0 1 {name=M160
-L=1
+L=10
 W=1
 body=VP
 nf=1
@@ -2789,7 +2789,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 470 1090 0 1 {name=M161
-L=1
+L=10
 W=1
 body=VP
 nf=1
@@ -2879,7 +2879,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 830 1250 0 1 {name=M167
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -2894,7 +2894,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 740 1250 0 1 {name=M168
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -2909,7 +2909,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 650 1250 0 1 {name=M169
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -2924,7 +2924,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 560 1250 0 1 {name=M170
-L=10
+L=1
 W=1
 body=VP
 nf=1
@@ -2939,7 +2939,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 470 1250 0 1 {name=M171
-L=10
+L=1
 W=1
 body=VP
 nf=1

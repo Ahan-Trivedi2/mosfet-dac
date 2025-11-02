@@ -704,7 +704,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -810 120 0 0 {name=M37
-L=1
+L=10
 W=1
 body=VN
 nf=1
@@ -719,7 +719,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -810 220 0 0 {name=M38
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -734,7 +734,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -720 220 0 0 {name=M39
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -749,7 +749,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -630 220 0 0 {name=M40
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -764,7 +764,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -540 220 0 0 {name=M41
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -779,7 +779,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -450 220 0 0 {name=M42
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -794,7 +794,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -720 120 0 0 {name=M43
-L=1
+L=10
 W=1
 body=VN
 nf=1
@@ -809,7 +809,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -630 120 0 0 {name=M44
-L=1
+L=10
 W=1
 body=VN
 nf=1
@@ -824,7 +824,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -540 120 0 0 {name=M45
-L=1
+L=10
 W=1
 body=VN
 nf=1
@@ -839,7 +839,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -450 120 0 0 {name=M46
-L=1
+L=10
 W=1
 body=VN
 nf=1
@@ -960,7 +960,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -810 280 0 0 {name=M78
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -975,7 +975,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -720 280 0 0 {name=M79
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -990,7 +990,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -630 280 0 0 {name=M80
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -1005,7 +1005,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -540 280 0 0 {name=M81
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -1020,7 +1020,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -450 280 0 0 {name=M82
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -1365,7 +1365,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -360 120 0 0 {name=M52
-L=1
+L=10
 W=1
 body=VN
 nf=1
@@ -1380,7 +1380,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -360 220 0 0 {name=M53
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -1395,7 +1395,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -270 220 0 0 {name=M54
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -1410,7 +1410,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -180 220 0 0 {name=M55
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -1425,7 +1425,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -90 220 0 0 {name=M56
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -1440,7 +1440,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 0 220 0 0 {name=M57
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -1455,7 +1455,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -270 120 0 0 {name=M58
-L=1
+L=10
 W=1
 body=VN
 nf=1
@@ -1470,7 +1470,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -180 120 0 0 {name=M60
-L=1
+L=10
 W=1
 body=VN
 nf=1
@@ -1485,7 +1485,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -90 120 0 0 {name=M62
-L=1
+L=10
 W=1
 body=VN
 nf=1
@@ -1500,7 +1500,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 0 120 0 0 {name=M63
-L=1
+L=10
 W=1
 body=VN
 nf=1
@@ -1590,7 +1590,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -360 280 0 0 {name=M73
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -1605,7 +1605,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -270 280 0 0 {name=M74
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -1620,7 +1620,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -180 280 0 0 {name=M75
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -1635,7 +1635,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -90 280 0 0 {name=M76
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -1650,7 +1650,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 0 280 0 0 {name=M83
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -1995,7 +1995,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 920 120 0 1 {name=M108
-L=1
+L=10
 W=1
 body=VN
 nf=1
@@ -2010,7 +2010,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 920 220 0 1 {name=M109
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -2025,7 +2025,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 830 220 0 1 {name=M110
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -2040,7 +2040,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 740 220 0 1 {name=M111
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -2055,7 +2055,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 650 220 0 1 {name=M112
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -2070,7 +2070,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 560 220 0 1 {name=M113
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -2085,7 +2085,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 830 120 0 1 {name=M114
-L=1
+L=10
 W=1
 body=VN
 nf=1
@@ -2100,7 +2100,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 740 120 0 1 {name=M115
-L=1
+L=10
 W=1
 body=VN
 nf=1
@@ -2115,7 +2115,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 650 120 0 1 {name=M116
-L=1
+L=10
 W=1
 body=VN
 nf=1
@@ -2130,7 +2130,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 560 120 0 1 {name=M117
-L=1
+L=10
 W=1
 body=VN
 nf=1
@@ -2250,7 +2250,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 920 280 0 1 {name=M125
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -2265,7 +2265,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 830 280 0 1 {name=M126
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -2280,7 +2280,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 740 280 0 1 {name=M127
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -2295,7 +2295,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 650 280 0 1 {name=M128
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -2310,7 +2310,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 560 280 0 1 {name=M129
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -2655,7 +2655,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 470 120 0 1 {name=M152
-L=1
+L=10
 W=1
 body=VN
 nf=1
@@ -2670,7 +2670,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 470 220 0 1 {name=M153
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -2685,7 +2685,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 380 220 0 1 {name=M154
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -2700,7 +2700,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 290 220 0 1 {name=M155
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -2715,7 +2715,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 200 220 0 1 {name=M156
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -2730,7 +2730,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 110 220 0 1 {name=M157
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -2745,7 +2745,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 380 120 0 1 {name=M158
-L=1
+L=10
 W=1
 body=VN
 nf=1
@@ -2760,7 +2760,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 290 120 0 1 {name=M159
-L=1
+L=10
 W=1
 body=VN
 nf=1
@@ -2775,7 +2775,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 200 120 0 1 {name=M160
-L=1
+L=10
 W=1
 body=VN
 nf=1
@@ -2790,7 +2790,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 110 120 0 1 {name=M161
-L=1
+L=10
 W=1
 body=VN
 nf=1
@@ -2880,7 +2880,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 470 280 0 1 {name=M167
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -2895,7 +2895,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 380 280 0 1 {name=M168
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -2910,7 +2910,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 290 280 0 1 {name=M169
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -2925,7 +2925,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 200 280 0 1 {name=M170
-L=10
+L=1
 W=1
 body=VN
 nf=1
@@ -2940,7 +2940,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 110 280 0 1 {name=M171
-L=10
+L=1
 W=1
 body=VN
 nf=1
