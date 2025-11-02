@@ -1,0 +1,154 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Class LDS_pcbc.spice (0):  Merged 165 parallel devices.
+Class pcbc.spice (1):  Merged 165 parallel devices.
+Subcircuit summary:
+Circuit 1: LDS_pcbc.spice                  |Circuit 2: pcbc.spice                      
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (120->3)           |sky130_fd_pr__nfet_01v8 (120->3)           
+sky130_fd_pr__pfet_01v8 (52->4)            |sky130_fd_pr__pfet_01v8 (52->4)            
+Number of devices: 7                       |Number of devices: 7                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_pr__pfet_01v8:M88 vs. sky130_fd_pr__pfet_01v8:43:
+ W circuit1: 10   circuit2: 1   (delta=164%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:M59 vs. sky130_fd_pr__pfet_01v8:2:
+ W circuit1: 10   circuit2: 1   (delta=164%, cutoff=1%)
+sky130_fd_pr__nfet_01v8:M193 vs. sky130_fd_pr__nfet_01v8:1:
+ W circuit1: 20   circuit2: 40   (delta=66.7%, cutoff=1%)
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance sky130_fd_pr__nfet_01v8:M193 network:
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 20
+  L = 1
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 20
+  L = 10
+Circuit 2 instance sky130_fd_pr__nfet_01v8:1 network:
+  l = 1
+  w = 40
+  ps = 3.1
+  as = 0.43
+  pd = 2.8
+  ad = 0.4
+  M = 1
+sky130_fd_pr__nfet_01v8:M25 vs. sky130_fd_pr__nfet_01v8:0:
+ W circuit1: 20   circuit2: 40   (delta=66.7%, cutoff=1%)
+ L circuit1: 1   circuit2: 10   (delta=164%, cutoff=1%)
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance sky130_fd_pr__nfet_01v8:M25 network:
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 20
+  L = 1
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 20
+  L = 10
+Circuit 2 instance sky130_fd_pr__nfet_01v8:0 network:
+  l = 10
+  w = 40
+  ps = 3.1
+  as = 0.43
+  pd = 25.33
+  ad = 3.58665
+  M = 1
+sky130_fd_pr__nfet_01v8:M68 vs. sky130_fd_pr__nfet_01v8:7:
+ W circuit1: 20   circuit2: 40   (delta=66.7%, cutoff=1%)
+ L circuit1: 1   circuit2: 10   (delta=164%, cutoff=1%)
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance sky130_fd_pr__nfet_01v8:M68 network:
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 20
+  L = 1
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 20
+  L = 10
+Circuit 2 instance sky130_fd_pr__nfet_01v8:7 network:
+  l = 10
+  w = 40
+  ps = 25.33
+  as = 3.58665
+  pd = 2.8
+  ad = 0.4
+  M = 1
+Cells have no pins;  pin matching not needed.
+Device classes LDS_pcbc.spice and pcbc.spice are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ LDS_pcbc.spice
