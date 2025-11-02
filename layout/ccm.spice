@@ -1,0 +1,39 @@
+* SPICE3 file created from ccm.ext - technology: sky130A
+
+
+* Top level circuit ccm
+
+X0 w_n3620_60# a_3280_100# a_3480_1180# w_n3620_60# sky130_fd_pr__pfet_01v8 ad=0.58 pd=3.53 as=0.58 ps=3.53 w=2 l=5
+X1 a_3280_100# a_n1080_60# a_2200_100# a_1000_100# sky130_fd_pr__nfet_01v8 ad=0.87 pd=5.3 as=0.58 ps=3.53 w=2 l=5
+X2 a_2200_100# a_0_20# a_1000_100# a_1000_100# sky130_fd_pr__nfet_01v8 ad=0.58 pd=3.53 as=2.14 ps=7 w=2 l=5
+X3 w_n3620_60# w_n3620_60# w_n3620_60# w_n3620_60# sky130_fd_pr__pfet_01v8 ad=0.58 pd=3.53 as=24.6 ps=113.2 w=2 l=5
+X4 a_n280_1180# w_n3620_60# w_n3620_60# w_n3620_60# sky130_fd_pr__pfet_01v8 ad=0.58 pd=3.53 as=1.47 ps=5.9 w=2 l=5
+X5 w_n3620_60# a_3280_100# a_3280_100# w_n3620_60# sky130_fd_pr__pfet_01v8 ad=0.58 pd=3.53 as=0.87 ps=5.3 w=2 l=5
+X6 a_n280_1180# w_n3620_60# w_n3620_60# w_n3620_60# sky130_fd_pr__pfet_01v8 ad=0.58 pd=3.53 as=1.47 ps=5.9 w=2 l=5
+X7 a_1000_100# a_0_20# a_n80_100# a_1000_100# sky130_fd_pr__nfet_01v8 ad=2.14 pd=7 as=0.58 ps=3.53 w=2 l=5
+X8 w_n3620_60# w_n3620_60# w_n3620_60# w_n3620_60# sky130_fd_pr__pfet_01v8 ad=0.58 pd=3.53 as=0 ps=0 w=2 l=5
+X9 w_n3620_60# w_n3620_60# w_n3620_60# w_n3620_60# sky130_fd_pr__pfet_01v8 ad=0.58 pd=3.53 as=0 ps=0 w=2 l=5
+X10 a_n280_1180# a_n1280_1140# a_n1360_1180# w_n3620_60# sky130_fd_pr__pfet_01v8 ad=0.58 pd=3.53 as=0.58 ps=3.53 w=2 l=5
+X11 a_n280_1180# a_n1280_1140# a_n1360_1180# w_n3620_60# sky130_fd_pr__pfet_01v8 ad=0.58 pd=3.53 as=0.58 ps=3.53 w=2 l=5
+X12 w_n3620_60# w_n3620_60# a_n280_1180# w_n3620_60# sky130_fd_pr__pfet_01v8 ad=1.47 pd=5.9 as=0.58 ps=3.53 w=2 l=5
+X13 w_n3620_60# w_n3620_60# a_n280_1180# w_n3620_60# sky130_fd_pr__pfet_01v8 ad=1.47 pd=5.9 as=0.58 ps=3.53 w=2 l=5
+X14 a_2200_100# a_0_20# a_1000_100# a_1000_100# sky130_fd_pr__nfet_01v8 ad=0.58 pd=3.53 as=2.14 ps=7 w=2 l=5
+X15 a_n80_100# a_n1080_60# a_n2360_60# a_1000_100# sky130_fd_pr__nfet_01v8 ad=0.58 pd=3.53 as=0.87 ps=5.3 w=2 l=5
+X16 a_1000_100# a_0_20# a_n80_100# a_1000_100# sky130_fd_pr__nfet_01v8 ad=2.14 pd=7 as=0.58 ps=3.53 w=2 l=5
+X17 a_n1360_1180# a_n2360_60# w_n3620_60# w_n3620_60# sky130_fd_pr__pfet_01v8 ad=0.58 pd=3.53 as=0.58 ps=3.53 w=2 l=5
+X18 w_n3620_60# w_n3620_60# w_n3620_60# w_n3620_60# sky130_fd_pr__pfet_01v8 ad=1.47 pd=5.9 as=0 ps=0 w=2 l=5
+X19 a_n1360_1180# a_n2360_60# w_n3620_60# w_n3620_60# sky130_fd_pr__pfet_01v8 ad=0.58 pd=3.53 as=0.58 ps=3.53 w=2 l=5
+X20 a_n2360_60# a_n2360_60# w_n3620_60# w_n3620_60# sky130_fd_pr__pfet_01v8 ad=0.87 pd=5.3 as=0.58 ps=3.53 w=2 l=5
+X21 a_n80_100# a_n1080_60# a_n2360_60# a_1000_100# sky130_fd_pr__nfet_01v8 ad=0.58 pd=3.53 as=0.87 ps=5.3 w=2 l=5
+X22 a_3480_1180# a_n1280_1140# a_n280_1180# w_n3620_60# sky130_fd_pr__pfet_01v8 ad=0.58 pd=3.53 as=0.58 ps=3.53 w=2 l=5
+X23 a_3480_1180# a_n1280_1140# a_n280_1180# w_n3620_60# sky130_fd_pr__pfet_01v8 ad=0.58 pd=3.53 as=0.58 ps=3.53 w=2 l=5
+X24 w_n3620_60# w_n3620_60# w_n3620_60# w_n3620_60# sky130_fd_pr__pfet_01v8 ad=1.47 pd=5.9 as=0 ps=0 w=2 l=5
+X25 a_3280_100# a_n1080_60# a_2200_100# a_1000_100# sky130_fd_pr__nfet_01v8 ad=0.87 pd=5.3 as=0.58 ps=3.53 w=2 l=5
+X26 w_n3620_60# w_n3620_60# w_n3620_60# w_n3620_60# sky130_fd_pr__pfet_01v8 ad=1.47 pd=5.9 as=0 ps=0 w=2 l=5
+X27 w_n3620_60# w_n3620_60# w_n3620_60# w_n3620_60# sky130_fd_pr__pfet_01v8 ad=1.47 pd=5.9 as=0 ps=0 w=2 l=5
+X28 a_n2360_60# a_n2360_60# w_n3620_60# w_n3620_60# sky130_fd_pr__pfet_01v8 ad=0.87 pd=5.3 as=0.58 ps=3.53 w=2 l=5
+X29 w_n3620_60# w_n3620_60# w_n3620_60# w_n3620_60# sky130_fd_pr__pfet_01v8 ad=0.58 pd=3.53 as=0 ps=0 w=2 l=5
+X30 w_n3620_60# a_3280_100# a_3480_1180# w_n3620_60# sky130_fd_pr__pfet_01v8 ad=0.58 pd=3.53 as=0.58 ps=3.53 w=2 l=5
+X31 w_n3620_60# a_3280_100# a_3280_100# w_n3620_60# sky130_fd_pr__pfet_01v8 ad=0.58 pd=3.53 as=0.87 ps=5.3 w=2 l=5
+.end
+
