@@ -1,0 +1,11 @@
+* SPICE3 file created from inv.ext - technology: sky130A
+
+
+* Top level circuit inv
+
+X0 a_100_0# a_0_n100# a_n140_0# a_n140_0# sky130_fd_pr__nfet_01v8 ad=0.4 pd=2.4 as=0.8 ps=4.8 w=2 l=0.5
+X1 a_100_0# a_0_n100# w_n180_500# w_n180_500# sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.4 as=0.8 ps=4.8 w=2 l=0.5
+X2 w_n180_500# a_0_n100# a_100_0# w_n180_500# sky130_fd_pr__pfet_01v8 ad=0.8 pd=4.8 as=0.4 ps=2.4 w=2 l=0.5
+X3 a_n140_0# a_0_n100# a_100_0# a_n140_0# sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.8 as=0.4 ps=2.4 w=2 l=0.5
+.end
+
