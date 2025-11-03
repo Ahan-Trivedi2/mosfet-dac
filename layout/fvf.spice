@@ -1,0 +1,19 @@
+* SPICE3 file created from fvf.ext - technology: sky130A
+
+X0 Vin Vc Vdsg VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=2.5 as=1 ps=5 w=2 l=5
+X1 Vin Vdsg VN VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=2.5 as=0.5 ps=2.5 w=2 l=5
+X2 VP VP VP VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=4 ps=24 w=1 l=1
+X3 VP VP VP VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0 ps=0 w=1 l=1
+X4 Vdsg Vc Vin VN sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=0.5 ps=2.5 w=2 l=5
+X5 Vdsg Vbp VP VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=1
+X6 Vin Vc Vdsg VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=2.5 as=1 ps=5 w=2 l=5
+X7 VP Vbp Vdsg VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=1
+X8 Vdsg Vc Vin VN sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=0.5 ps=2.5 w=2 l=5
+X9 VP VP VP VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0 ps=0 w=1 l=1
+X10 VP VP VP VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0 ps=0 w=1 l=1
+X11 VN Vdsg Vin VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=2.5 as=0.5 ps=2.5 w=2 l=5
+X12 Vin Vdsg VN VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=2.5 as=0.5 ps=2.5 w=2 l=5
+X13 Vdsg Vbp VP VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=1
+X14 VP Vbp Vdsg VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=1
+X15 VN Vdsg Vin VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=2.5 as=0.5 ps=2.5 w=2 l=5
+.end
