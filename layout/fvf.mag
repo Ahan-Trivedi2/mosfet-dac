@@ -1,6 +1,10 @@
 magic
 tech sky130A
+<<<<<<< HEAD
+timestamp 1762122095
+=======
 timestamp 1762123188
+>>>>>>> dfa7ae019fa7072d073d22548caf7b4b9046db9d
 << nwell >>
 rect -150 -160 325 200
 rect 2650 -195 3125 165
@@ -562,6 +566,17 @@ rect 1535 -510 1560 -480
 << labels >>
 rlabel metal1 1330 470 1330 470 1 VP
 port 1 n
+<<<<<<< HEAD
+rlabel metal1 1390 470 1390 470 1 Vdsg
+port 2 n
+rlabel metal1 1490 470 1490 470 1 VN
+port 3 n
+rlabel metal1 1440 -510 1440 -510 5 Vin
+port 4 s
+rlabel metal1 1490 -510 1490 -510 5 Vc
+port 5 s
+rlabel metal1 1550 -510 1550 -510 5 Vbp
+=======
 rlabel metal1 1385 470 1385 470 1 Vdsg
 port 2 n
 rlabel metal1 1490 470 1490 470 1 VN
@@ -571,5 +586,6 @@ port 4 s
 rlabel metal1 1490 -510 1490 -510 5 Vc
 port 5 s
 rlabel metal1 1545 -510 1545 -510 5 Vbp
+>>>>>>> dfa7ae019fa7072d073d22548caf7b4b9046db9d
 port 6 s
 << end >>
