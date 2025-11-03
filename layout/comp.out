@@ -7,22 +7,19 @@ Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v
 Equate elements:  no current cell.
 Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
 
-Class LDS_ccm_nofvf.spice (2):  Merged 20 parallel devices.
-Class ccm.spice (3):  Merged 20 parallel devices.
+Class LDS_inverter.spice (0):  Merged 2 parallel devices.
+Class inv.spice (1):  Merged 2 parallel devices.
 Subcircuit summary:
-Circuit 1: LDS_ccm_nofvf.spice             |Circuit 2: ccm.spice                       
+Circuit 1: LDS_inverter.spice              |Circuit 2: inv.spice                       
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__pfet_01v8 (24->8)            |sky130_fd_pr__pfet_01v8 (24->8)            
-sky130_fd_pr__nfet_01v8 (8->4)             |sky130_fd_pr__nfet_01v8 (8->4)             
-Number of devices: 12                      |Number of devices: 12                      
-Number of nets: 12                         |Number of nets: 12                         
+sky130_fd_pr__pfet_01v8 (2->1)             |sky130_fd_pr__pfet_01v8 (2->1)             
+sky130_fd_pr__nfet_01v8 (2->1)             |sky130_fd_pr__nfet_01v8 (2->1)             
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
 ---------------------------------------------------------------------------------------
-Resolving symmetries by property value.
-Resolving symmetries by pin name.
-Resolving symmetries by net name.
-Netlists match with 8 symmetries.
+Netlists match uniquely.
 Cells have no pins;  pin matching not needed.
-Device classes LDS_ccm_nofvf.spice and ccm.spice are equivalent.
+Device classes LDS_inverter.spice and inv.spice are equivalent.
 
 Final result: Circuits match uniquely.
 .
