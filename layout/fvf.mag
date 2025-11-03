@@ -1,10 +1,5 @@
 magic
 tech sky130A
-<<<<<<< HEAD
-timestamp 1762122095
-=======
-timestamp 1762123188
->>>>>>> dfa7ae019fa7072d073d22548caf7b4b9046db9d
 << nwell >>
 rect -150 -160 325 200
 rect 2650 -195 3125 165
