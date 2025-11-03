@@ -1,12 +1,20 @@
 
-Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
-Equate elements:  no current cell.
-Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
-
 Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
-Equate elements:  no current cell.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
 Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
 
+<<<<<<< HEAD
 Class LDS_inverter.spice (0):  Merged 2 parallel devices.
 Class inv.spice (1):  Merged 2 parallel devices.
 Subcircuit summary:
@@ -20,6 +28,46 @@ Number of nets: 4                          |Number of nets: 4
 Netlists match uniquely.
 Cells have no pins;  pin matching not needed.
 Device classes LDS_inverter.spice and inv.spice are equivalent.
+=======
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Class bbg (0):  Merged 24 parallel devices.
+Class LDS_bbg (1):  Merged 24 parallel devices.
+Subcircuit summary:
+Circuit 1: bbg                             |Circuit 2: LDS_bbg                         
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (16->4)            |sky130_fd_pr__nfet_01v8 (16->4)            
+sky130_fd_pr__pfet_01v8 (16->4)            |sky130_fd_pr__pfet_01v8 (16->4)            
+Number of devices: 8                       |Number of devices: 8                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: bbg                             |Circuit 2: LDS_bbg                         
+-------------------------------------------|-------------------------------------------
+RES                                        |RES                                        
+VP                                         |VP                                         
+VBP                                        |VBP                                        
+VBN                                        |VBN                                        
+VN                                         |VN                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes bbg and LDS_bbg are equivalent.
+>>>>>>> da1f35e3ed344805324a441ca7aee6c8c7ef0cab
 
 Final result: Circuits match uniquely.
 .
