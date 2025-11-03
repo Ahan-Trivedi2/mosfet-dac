@@ -192,7 +192,7 @@ spiceprefix=X
 C {lab_pin.sym} -390 -250 3 0 {name=p57 sig_type=std_logic lab=VN}
 C {madvlsi/pmos3.sym} -560 -280 3 0 {name=M3
 L=3
-W=1/3
+W=0.45
 body=VP
 nf=1
 mult=1
@@ -281,7 +281,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -560 -370 3 0 {name=M6
 L=3
-W=1/3
+W=0.45
 body=VP
 nf=1
 mult=1
@@ -326,7 +326,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -220 -280 1 1 {name=M9
 L=3
-W=1/3
+W=0.45
 body=VP
 nf=1
 mult=1
@@ -371,7 +371,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -220 -370 1 1 {name=M12
 L=3
-W=1/3
+W=0.45
 body=VP
 nf=1
 mult=1

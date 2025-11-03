@@ -10,10 +10,6 @@ N 270 -180 300 -180 {lab=A}
 N 270 -140 300 -140 {lab=VN}
 N 270 -100 300 -100 {lab=Y}
 N 60 -70 60 -50 {lab=VN}
-N 380 -180 410 -180 {lab=VP}
-N 380 -140 410 -140 {lab=A}
-N 380 -100 410 -100 {lab=VN}
-N 380 -60 410 -60 {lab=Y}
 N 200 -70 200 -50 {lab=VN}
 N 200 -200 200 -180 {lab=VP}
 N 120 -70 140 -70 {lab=Y}
@@ -60,14 +56,6 @@ C {iopin.sym} 300 -220 0 0 {name=p9 lab=VP}
 C {ipin.sym} 300 -180 2 0 {name=p10 lab=A}
 C {opin.sym} 300 -100 0 0 {name=p11 lab=Y}
 C {iopin.sym} 300 -140 0 0 {name=p12 lab=VN}
-C {lab_pin.sym} 380 -180 0 0 {name=p5 sig_type=std_logic lab=VP}
-C {lab_pin.sym} 380 -140 0 0 {name=p6 sig_type=std_logic lab=A}
-C {lab_pin.sym} 380 -100 0 0 {name=p7 sig_type=std_logic lab=VN}
-C {lab_pin.sym} 380 -60 0 0 {name=p8 sig_type=std_logic lab=Y}
-C {iopin.sym} 410 -180 0 0 {name=p9 lab=VP}
-C {ipin.sym} 410 -140 2 0 {name=p10 lab=A}
-C {opin.sym} 410 -60 0 0 {name=p11 lab=Y}
-C {iopin.sym} 410 -100 0 0 {name=p12 lab=VN}
 C {lab_pin.sym} 60 -200 1 0 {name=p2 sig_type=std_logic lab=VP}
 C {lab_pin.sym} 60 -50 3 0 {name=p13 sig_type=std_logic lab=VN}
 C {lab_pin.sym} 130 -20 3 0 {name=p14 sig_type=std_logic lab=A}
