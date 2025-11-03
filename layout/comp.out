@@ -1,19 +1,12 @@
 
 Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
-Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
-Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
-
-Subcircuit pins:
-Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
--------------------------------------------|-------------------------------------------
-1                                          |1                                          
-2                                          |2                                          
-3                                          |3                                          
-4                                          |4                                          
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
+Equate elements:  no current cell.
 Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
 
+<<<<<<< HEAD
+Class dac.spice (0):  Merged 41 parallel devices.
+Class LDS_dac.spice (1):  Merged 41 parallel devices.
+=======
 <<<<<<< HEAD
 Class LDS_inverter.spice (0):  Merged 2 parallel devices.
 Class inv.spice (1):  Merged 2 parallel devices.
@@ -46,14 +39,22 @@ Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalen
 
 Class bbg (0):  Merged 24 parallel devices.
 Class LDS_bbg (1):  Merged 24 parallel devices.
+>>>>>>> b03f64fae17eb17a11a9a2ed950fa8c652ee7b04
 Subcircuit summary:
-Circuit 1: bbg                             |Circuit 2: LDS_bbg                         
+Circuit 1: dac.spice                       |Circuit 2: LDS_dac.spice                   
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__nfet_01v8 (16->4)            |sky130_fd_pr__nfet_01v8 (16->4)            
-sky130_fd_pr__pfet_01v8 (16->4)            |sky130_fd_pr__pfet_01v8 (16->4)            
-Number of devices: 8                       |Number of devices: 8                       
-Number of nets: 7                          |Number of nets: 7                          
+sky130_fd_pr__nfet_01v8 (290->249)         |sky130_fd_pr__nfet_01v8 (290->249)         
+Number of devices: 249                     |Number of devices: 249                     
+Number of nets: 221                        |Number of nets: 221                        
 ---------------------------------------------------------------------------------------
+<<<<<<< HEAD
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Resolving symmetries by net name.
+Netlists match with 224 symmetries.
+Cells have no pins;  pin matching not needed.
+Device classes dac.spice and LDS_dac.spice are equivalent.
+=======
 Netlists match uniquely.
 
 Subcircuit pins:
@@ -68,6 +69,7 @@ VN                                         |VN
 Cell pin lists are equivalent.
 Device classes bbg and LDS_bbg are equivalent.
 >>>>>>> da1f35e3ed344805324a441ca7aee6c8c7ef0cab
+>>>>>>> b03f64fae17eb17a11a9a2ed950fa8c652ee7b04
 
 Final result: Circuits match uniquely.
 .
