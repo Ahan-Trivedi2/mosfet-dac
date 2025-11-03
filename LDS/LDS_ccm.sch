@@ -5,11 +5,10 @@ V {}
 S {}
 F {}
 E {}
-N -120 40 -30 40 {lab=VP}
-N 10 80 10 100 {lab=#net1}
-N -130 100 10 100 {lab=#net1}
-N -130 70 -130 100 {lab=#net1}
-N -60 100 -60 130 {lab=#net1}
+N 10 80 10 100 {lab=VN}
+N -130 100 10 100 {lab=VN}
+N -130 70 -130 100 {lab=VN}
+N -60 100 -60 130 {lab=VN}
 N 10 -80 10 -20 {lab=VP}
 N -130 -80 10 -80 {lab=VP}
 N -130 -80 -130 -60 {lab=VP}
@@ -25,6 +24,7 @@ N -210 -30 -170 -30 {lab=Vbp}
 N -260 0 -170 0 {lab=Vcn}
 N -260 20 -260 40 {lab=Iin}
 N -260 20 -170 20 {lab=Iin}
+N -120 40 -30 40 {lab=VP}
 C {/home/madvlsi/Documents/mosfet-dac/LDS/LDS_ccm_nofvf.sym} 10 10 0 0 {}
 C {/home/madvlsi/Documents/mosfet-dac/LDS/LDS_fvf.sym} -170 70 0 0 {name=X1}
 C {lab_pin.sym} -430 -100 0 0 {name=p4 sig_type=std_logic lab=VP}

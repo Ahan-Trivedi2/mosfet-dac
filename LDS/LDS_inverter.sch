@@ -25,29 +25,6 @@ N 90 -20 130 -20 {lab=A}
 N 90 -40 90 -20 {lab=A}
 N 130 -210 130 -180 {lab=Y}
 N 60 -200 60 -180 {lab=VP}
-C {madvlsi/pmos3.sym} 90 -180 1 0 {name=M2
->>>>>>> dfa7ae019fa7072d073d22548caf7b4b9046db9d
-L=0.5
-W=2
-body=VP
-nf=1
-<<<<<<< HEAD
-mult=2
-=======
-mult=1
->>>>>>> dfa7ae019fa7072d073d22548caf7b4b9046db9d
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {madvlsi/nmos3.sym} 90 -70 3 0 {name=M1
-=======
-C \{madvlsi/nmos3.sym}
 C {lab_pin.sym} 270 -220 0 0 {name=p5 sig_type=std_logic lab=VP}
 C {lab_pin.sym} 270 -180 0 0 {name=p6 sig_type=std_logic lab=A}
 C {lab_pin.sym} 270 -140 0 0 {name=p7 sig_type=std_logic lab=VN}
@@ -92,3 +69,33 @@ spiceprefix=X
 }
 C {lab_pin.sym} 200 -50 3 0 {name=p3 sig_type=std_logic lab=VN}
 C {lab_pin.sym} 200 -200 1 0 {name=p4 sig_type=std_logic lab=VP}
+C {madvlsi/nmos3.sym} 90 -70 3 0 {name=M1
+L=0.5
+W=2
+body=VN
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {madvlsi/pmos3.sym} 90 -180 1 0 {name=M2
+L=0.5
+W=2
+body=VP
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}

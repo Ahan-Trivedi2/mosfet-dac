@@ -1,32 +1,10 @@
 
 Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
-Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
-Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
-
-Subcircuit pins:
-Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
--------------------------------------------|-------------------------------------------
-1                                          |1                                          
-2                                          |2                                          
-3                                          |3                                          
-4                                          |4                                          
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
+Equate elements:  no current cell.
 Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
 
 Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
-Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
-Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
-
-Subcircuit pins:
-Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
--------------------------------------------|-------------------------------------------
-1                                          |1                                          
-2                                          |2                                          
-3                                          |3                                          
-4                                          |4                                          
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
+Equate elements:  no current cell.
 Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
 Flattening unmatched subcell LDS_bbg in circuit LDS_mosdac.spice (0)(1 instance)
 Flattening unmatched subcell LDS_ccm in circuit LDS_mosdac.spice (0)(1 instance)
@@ -37,8 +15,27 @@ Flattening unmatched subcell LDS_pcbc in circuit LDS_mosdac.spice (0)(1 instance
 Flattening unmatched subcell LDS_dac in circuit LDS_mosdac.spice (0)(1 instance)
 Flattening unmatched subcell LDS_inverter in circuit LDS_mosdac.spice (0)(7 instances)
 
-Class LDS_mosdac.spice (0):  Merged 454 parallel devices.
+Class LDS_mosdac.spice (0):  Merged 464 parallel devices.
+Class full.spice (1):  Merged 464 parallel devices.
+Subcircuit summary:
+Circuit 1: LDS_mosdac.spice                |Circuit 2: full.spice                      
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (247->30)          |sky130_fd_pr__pfet_01v8 (247->30)          
+sky130_fd_pr__nfet_01v8 (524->277)         |sky130_fd_pr__nfet_01v8 (524->277)         
+Number of devices: 307                     |Number of devices: 307                     
+Number of nets: 243                        |Number of nets: 243                        
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Resolving symmetries by net name.
+Netlists match with 232 symmetries with property errors.
+sky130_fd_pr__pfet_01v8:M3 vs. sky130_fd_pr__pfet_01v8:760:
+ W circuit1: 0.45   circuit2: 0.55   (delta=20%, cutoff=1%)
 Cells have no pins;  pin matching not needed.
 Device classes LDS_mosdac.spice and full.spice are equivalent.
 
-Final result: Verify:  cell full.spice has no elements and/or nodes.  Not checked.
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ LDS_mosdac.spice
